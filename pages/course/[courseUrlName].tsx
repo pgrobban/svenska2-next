@@ -3,6 +3,7 @@ import { getCourseByUrlName } from "../../helpers/utils";
 import IfDesktop from "../../helpers/IfDesktop";
 //import CourseOverview from "../components/CourseOverview";
 import { useRouter } from 'next/router'
+import CourseOverview from "../../components/CourseOverview";
 
 interface Props {
   courseUrlName?: string;

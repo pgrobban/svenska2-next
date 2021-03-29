@@ -1,22 +1,11 @@
-import { isArray } from "lodash";
-import React from "react";
-import { Media } from "./media";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { getRenderableItems } from './utils';
 
-const IfDesktop: React.FC = (props) => {
-  const { children } = props;
-
-  return (
-    <>
-      <Media lessThan="lg">
-        <React.Fragment />
-      </Media>
-      <Media greaterThanOrEqual="lg">
-        {isArray(children)
-          ? children.map((child, index) => <div key={index}>{child}</div>)
-          : children}
-      </Media>
-    </>
-  );
+// @ts-ignore
+const IfDesktop: React.FC = ({ children }) => {
+  const matches = useMediaQuery('(min-width:1200px)');
+  const renderableItems = getRenderableItems(children);
+  return matches ? <>{renderableItems.map((child) => <>{child}</>)}</> : null;
 };
 
 export default IfDesktop;

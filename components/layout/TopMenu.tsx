@@ -16,7 +16,7 @@ interface Props {
   setIsSideBarOpen: (sideBarOpen: boolean) => void;
 }
 
-const TopMenu: React.FunctionComponent<Props> = (props) => {
+const TopMenu: React.FC<Props> = (props) => {
   const { isSideBarOpen, setIsSideBarOpen } = props;
 
   return (

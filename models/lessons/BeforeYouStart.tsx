@@ -1,4 +1,3 @@
-import React from "react";
 import Icon from "../../components/Icon";
 import { Button } from "@material-ui/core";
 import AudioButton from "../../components/AudioButton";

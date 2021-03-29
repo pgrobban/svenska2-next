@@ -1,4 +1,3 @@
-import React from "react";
 import { Course } from "../models/types";
 import LessonLink from "./LessonLink";
 

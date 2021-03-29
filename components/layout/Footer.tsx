@@ -6,7 +6,7 @@ import IfDesktop from "../../helpers/IfDesktop";
 
 interface Props {}
 
-const Footer: React.FunctionComponent<Props> = () => {
+const Footer: React.FC<Props> = () => {
   const copyright = (
     <span>
       &copy; {new Date().getFullYear()} Robban's Swedish Language Corner

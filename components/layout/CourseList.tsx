@@ -1,6 +1,6 @@
 import { Button } from "@material-ui/core";
 import classnames from "classnames";
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import courses from "../../models/courses";
 import { getCourseNameByLessonUrlName } from "../../helpers/utils";

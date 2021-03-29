@@ -1,20 +1,17 @@
 import React from "react";
-import { Media } from "./media";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { getRenderableItems } from "./utils";
 
 interface IfMobileProps {
   biggerThanPhone?: boolean;
 }
 
+// @ts-ignore
 const IfMobile: React.FC<IfMobileProps> = (props) => {
-  const { biggerThanPhone, children } = props;
-
-  return (
-    <React.Fragment>
-      <Media at="sm">{biggerThanPhone ? null : children}</Media>
-      <Media at="md">{!biggerThanPhone ? children : null}</Media>
-      <Media greaterThanOrEqual="lg"><React.Fragment /></Media>
-    </React.Fragment>
-  );
+  const { children } = props;
+  const matches = useMediaQuery('(max-width:1199px)');
+  const renderableItems = getRenderableItems(children);
+  return matches ? <>{renderableItems.map((child) => <>{child}</>)}</> : null;
 };
 
 export default IfMobile;

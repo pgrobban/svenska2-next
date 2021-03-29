@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import CourseList from "./CourseList";
 import IfMobile from "../../helpers/IfMobile";

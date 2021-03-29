@@ -1,4 +1,3 @@
-import React from 'react';
 import { chunks as beforeYouStartChunks } from './lessons/BeforeYouStart';
 import intermediateGrammarCourse from './courses/intermediateGrammarCourse';
 import pronunciationCourse from './courses/pronunciationCourse';

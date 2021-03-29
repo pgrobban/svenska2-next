@@ -1,7 +1,8 @@
-import { cloneDeep, sampleSize } from 'lodash';
+import { cloneDeep, compact, isArray, sampleSize } from 'lodash';
 import courses from '../models/courses';
 import { find } from 'lodash';
 import { Lesson, Course, CorrectIncorrectMark } from '../../models/types';
+import React, { ReactNode } from 'react';
 
 export const LETTERS_OF_ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ';
 
@@ -92,4 +93,8 @@ export const getSwedishOrdinalDayToday = () => {
   const currentDate = new Date();
   const ordinalDay = SWEDISH_DAY_ORDINALS[currentDate.getDate() - 1];
   return addAlternateSwedishOrdinal(ordinalDay);
+}
+
+export const getRenderableItems = (children: ReactNode) => {
+  return isArray(children) ? compact(children) : [children];
 }
