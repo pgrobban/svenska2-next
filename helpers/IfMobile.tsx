@@ -6,12 +6,8 @@ interface IfMobileProps {
   biggerThanPhone?: boolean;
 }
 
-// @ts-ignore
-const IfMobile: React.FC<IfMobileProps> = (props) => {
-  const { children } = props;
-  const matches = useMediaQuery('(max-width:1199px)');
-  const renderableItems = getRenderableItems(children);
-  return matches ? <>{renderableItems.map((child) => <>{child}</>)}</> : null;
+const IfMobile: React.FC<IfMobileProps> = ({ children, biggerThanPhone }) => {
+  return null;
 };
 
 export default IfMobile;
