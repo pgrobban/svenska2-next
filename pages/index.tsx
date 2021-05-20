@@ -8,7 +8,7 @@ interface Props {}
 
 const Home: React.FC<Props> = () => {
   return (
-    <Layout>
+    <Layout location="home">
       <div className="blackboard">
         <h2>
           Swedish,

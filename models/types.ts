@@ -1,6 +1,5 @@
 
-import { ReactElement, ReactNode } from 'react';
-import { CommonExerciseProps } from '../components/Exercise';
+import { ReactNode } from 'react';
 
 export interface Course {
   name: string;
@@ -11,10 +10,6 @@ export interface Lesson {
   name: string;
   urlName: string;
   description: string;
-  chunks: ReactElement[];
-  exercises: ReactElement<CommonExerciseProps>[];
-  number?: number;
-  hideBottomNavigation?: boolean;
 }
 
 export interface ExerciseProps {

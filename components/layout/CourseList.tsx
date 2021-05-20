@@ -7,7 +7,7 @@ import { getCourseNameByLessonUrlName } from "../../helpers/utils";
 import Icon from "../Icon";
 import LessonList from "./LessonList";
 
-export const LESSONS_PATH = "/lessons";
+export const LESSONS_PATH = "/lesson";
 export const COURSES_PATH = "/courses";
 
 const BEFORE_YOU_START_URL_NAME = "before-you-start";
@@ -41,7 +41,9 @@ const CourseList: React.FC<CourseListProps> = (props) => {
                   activeLessonUrlName === BEFORE_YOU_START_URL_NAME,
               },
             ])}
-          />
+          >
+            How to use this site
+          </a>
         </Link>
       </div>
 

@@ -23,7 +23,12 @@ const theme = createMuiTheme({
   }
 });
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  location: string;
+  activeLessonUrlName?: string;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children, location, activeLessonUrlName }) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
   return (
@@ -62,7 +67,7 @@ export default function Layout({ children }) {
             </Button>
           </IfMobile>
 
-          <NavigationSidebar location="" />
+          <NavigationSidebar location={location} activeLessonUrlName={activeLessonUrlName} />
         </nav>
 
         {/* Main content: shift it to the right by 300 pixels when the sidebar is visible */}
@@ -92,3 +97,5 @@ export default function Layout({ children }) {
     </>
   );
 }
+
+export default Layout;

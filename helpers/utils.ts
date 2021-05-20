@@ -1,8 +1,7 @@
-import { cloneDeep, compact, isArray, sampleSize } from 'lodash';
+import { cloneDeep, sampleSize } from 'lodash';
 import courses from '../models/courses';
 import { find } from 'lodash';
-import { Lesson, Course, CorrectIncorrectMark } from '../../models/types';
-import React, { ReactNode } from 'react';
+import { Lesson, Course, CorrectIncorrectMark } from '../models/types';
 
 export const LETTERS_OF_ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ';
 

@@ -9,15 +9,13 @@ import Link from "next/link";
 import { carouselProps } from "../../helpers/props";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
+import { NextPage } from "next";
 
-const SECTIONS = {
-  LESSONS: 0,
-  EXERCISES: 1,
-  FEEDBACK_AND_QUESTIONS: 2
-};
+interface LessonViewProps {
+  location: string;
+}
 
-const Lessons: React.FC<void> = () => {
-  const [viewingSection, setViewingSection] = useState(SECTIONS.LESSONS);
+const BeforeYouStartLesson: NextPage<LessonViewProps> = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const lessonChunks = [
@@ -314,7 +312,7 @@ const Lessons: React.FC<void> = () => {
   };
 
   return (
-    <Layout>
+    <Layout location="lessons" activeLessonUrlName="before-you-start">
       <div className="lesson w3-margin-bottom">
         <IfMobile>
           <Carousel
@@ -341,4 +339,4 @@ const Lessons: React.FC<void> = () => {
   );
 };
 
-export default Lessons;
+export default BeforeYouStartLesson;
