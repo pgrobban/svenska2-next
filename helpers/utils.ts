@@ -94,7 +94,3 @@ export const getSwedishOrdinalDayToday = () => {
   const ordinalDay = SWEDISH_DAY_ORDINALS[currentDate.getDate() - 1];
   return addAlternateSwedishOrdinal(ordinalDay);
 }
-
-export const getRenderableItems = (children: ReactNode) => {
-  return isArray(children) ? compact(children) : [children];
-}

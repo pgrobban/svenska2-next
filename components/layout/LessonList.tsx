@@ -1,8 +1,8 @@
-import React from "react";
 import classnames from "classnames";
 import { Lesson } from "../../models/types";
 import LessonLink from "../LessonLink";
 import { COURSES_PATH } from "./CourseList";
+import Link from "next/link";
 
 interface Props {
   lessons: Lesson[];
@@ -31,10 +31,9 @@ const LessonList: React.FC<Props> = (props: Props) => {
             ])}
           >
             <Link
-              to={`${COURSES_PATH}/${overviewLesson.urlName}`}
-              title={overviewLesson.description}
+              href={`${COURSES_PATH}/${overviewLesson.urlName}`}
             >
-              Course overview
+              <a title={overviewLesson.description}>Course overview</a>
             </Link>
           </li>
         )}

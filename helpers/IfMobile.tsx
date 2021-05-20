@@ -1,13 +1,3 @@
-import React from "react";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { getRenderableItems } from "./utils";
-
-interface IfMobileProps {
-  biggerThanPhone?: boolean;
+export default function IfDesktop({ children }) {
+  return <div className="w3-hide-large">{children}</div>;
 }
-
-const IfMobile: React.FC<IfMobileProps> = ({ children, biggerThanPhone }) => {
-  return null;
-};
-
-export default IfMobile;

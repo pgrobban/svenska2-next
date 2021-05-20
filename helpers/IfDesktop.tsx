@@ -1,10 +1,5 @@
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { isArray } from 'lodash';
-import React from 'react';
-import { getRenderableItems } from './utils';
+import { Media, MediaContextProvider } from "../pages/Media";
 
-const IfDesktop: React.FC = ({ children }) => {
-  return children;
-};
-
-export default IfDesktop;
+export default function IfDesktop({ children }) {
+  return <div className="w3-hide-small w3-hide-medium">{children}</div>;
+}

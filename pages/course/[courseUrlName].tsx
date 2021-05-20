@@ -1,4 +1,3 @@
-import React from "react";
 import { getCourseByUrlName } from "../../helpers/utils";
 import IfDesktop from "../../helpers/IfDesktop";
 //import CourseOverview from "../components/CourseOverview";

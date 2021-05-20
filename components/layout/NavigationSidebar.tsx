@@ -2,6 +2,7 @@ import Link from "next/link";
 import CourseList from "./CourseList";
 import IfMobile from "../../helpers/IfMobile";
 import IfDesktop from "../../helpers/IfDesktop";
+import React from "react";
 
 interface Props {
   location: string;

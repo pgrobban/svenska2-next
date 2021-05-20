@@ -1,11 +1,30 @@
 module.exports = {
-  webpack(config) {
+  future: {
+    webpack5: true
+  },
+  webpack(config, options) {
     config.module.rules.push({
-      test: /\.svg$/,
-      issuer: {
-        test: /\.(js|ts)x?$/,
-      },
-      use: ['@svgr/webpack'],
+      test: /\.svg?$/,
+      oneOf: [
+        {
+          use: [
+            {
+              loader: "@svgr/webpack",
+              options: {
+                prettier: false,
+                svgo: true,
+                svgoConfig: {
+                  plugins: [{ removeViewBox: false }]
+                },
+                titleProp: true
+              }
+            }
+          ],
+          issuer: {
+            and: [/\.(ts|tsx|js|jsx|md|mdx)$/]
+          }
+        }
+      ]
     });
 
     return config;
@@ -14,10 +33,10 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/lessons',
-        destination: '/lesson/before-you-start',
-        permanent: true,
-      },
-    ]
+        source: "/lessons",
+        destination: "/lesson/before-you-start",
+        permanent: true
+      }
+    ];
   }
 };

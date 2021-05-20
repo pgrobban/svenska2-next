@@ -14,7 +14,7 @@ const AudioButton: React.FC<Props> = (props) => {
   const [audio, setAudio] = useState(null); // since we don't have Audio API on SSR
   useEffect(() => {
     setAudio(new Audio(`/sounds/${fileName}`));
-  });
+  }, [fileName]);
 
   return (
     <Button

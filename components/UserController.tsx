@@ -1,11 +1,12 @@
 import { TextField, Button } from "@material-ui/core";
 import Link from "next/link";
+import React from "react";
 
 interface Props {}
 
 const UserController = () => {
   return (
-    <>
+    <React.Fragment>
       <h4>Log in</h4>
 
       <form>
@@ -36,7 +37,7 @@ const UserController = () => {
           <a>Click here to register.</a>
         </Link>
       </span>
-    </>
+    </React.Fragment>
   );
 };
 
