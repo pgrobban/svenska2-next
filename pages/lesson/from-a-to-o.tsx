@@ -1,8 +1,7 @@
 import { useState } from "react";
 import AudioButton from "../../components/AudioButton";
 import { LETTERS_OF_ALPHABET, VOWELS } from "../../helpers/utils";
-import IfDesktop from "../../helpers/IfDesktop";
-import IfMobile from "../../helpers/IfMobile";
+import { IfDesktop, IfMobile } from "../../helpers/showBasedOnScreen";
 import Layout from "../../components/Layout";
 import { carouselProps } from "../../helpers/props";
 import Carousel from "react-multi-carousel";
@@ -93,8 +92,8 @@ const FromAToÖLesson: NextPage<LessonViewProps> = () => {
       </p>
       <p>
         When listening to the recordings{" "}
-        <IfMobile>in the next section</IfMobile>
-        <IfDesktop>in the section below</IfDesktop>, pay attention to how the
+        <IfMobile inline>in the next section</IfMobile>
+        <IfDesktop inline>in the section below</IfDesktop>, pay attention to how the
         long and short versions differ.
         <br />
         Also, please note that this is how the pronunciations here follow the

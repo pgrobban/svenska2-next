@@ -1,5 +1,5 @@
 
-import { ReactNode } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 export interface Course {
   name: string;
@@ -41,3 +41,8 @@ export interface Word {
 }
 
 export type CorrectIncorrectMark = "correct" | "incorrect";
+ 
+export interface ShowBasedOnScreenProps {
+  inline?: boolean;
+  children: ReactNode;
+}

@@ -7,8 +7,7 @@ import {
 } from "@material-ui/core";
 import Icon from "../Icon";
 import classnames from "classnames";
-import IfMobile from "../../helpers/IfMobile";
-import IfDesktop from "../../helpers/IfDesktop";
+import { IfDesktop, IfMobile } from "../../helpers/showBasedOnScreen";
 import Link from "next/link";
 
 interface Props {

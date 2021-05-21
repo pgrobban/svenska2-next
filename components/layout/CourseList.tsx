@@ -1,14 +1,12 @@
 import { Button } from "@material-ui/core";
 import classnames from "classnames";
-import { useState } from "react";
 import Link from "next/link";
+import React, { useState } from "react";
+import { LESSONS_PATH } from "../../helpers/utils";
 import courses from "../../models/courses";
 import { getCourseNameByLessonUrlName } from "../../helpers/utils";
 import Icon from "../Icon";
 import LessonList from "./LessonList";
-
-export const LESSONS_PATH = "/lesson";
-export const COURSES_PATH = "/courses";
 
 const BEFORE_YOU_START_URL_NAME = "before-you-start";
 
@@ -22,11 +20,10 @@ interface CourseListProps {
 
 const CourseList: React.FC<CourseListProps> = (props) => {
   const { activeLessonUrlName } = props;
-  const activeCourseName = getCourseNameByLessonUrlName(activeLessonUrlName)
-    ?.name;
-  const [expandedCourse, setExpandedCourse] = useState<
-    string | null | undefined
-  >(activeCourseName);
+  const activeCourseName =
+    getCourseNameByLessonUrlName(activeLessonUrlName)?.name;
+  const [expandedCourse, setExpandedCourse] =
+    useState<string | null | undefined>(activeCourseName);
 
   return (
     <div className="course-list">
@@ -38,11 +35,11 @@ const CourseList: React.FC<CourseListProps> = (props) => {
               "w3-animate-left",
               {
                 "theme-swe-active":
-                  activeLessonUrlName === BEFORE_YOU_START_URL_NAME,
-              },
+                  activeLessonUrlName === BEFORE_YOU_START_URL_NAME
+              }
             ])}
           >
-            How to use this site
+            <span>How to use this site</span>
           </a>
         </Link>
       </div>
@@ -59,7 +56,7 @@ const CourseList: React.FC<CourseListProps> = (props) => {
                 display: "flex",
                 justifyContent: "space-between",
                 cursor: "pointer",
-                alignItems: "center",
+                alignItems: "center"
               }}
               onClick={() =>
                 setExpandedCourse(

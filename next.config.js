@@ -38,5 +38,13 @@ module.exports = {
         permanent: true
       }
     ];
+  },
+  async rewrites() {
+    return [
+      {
+        source: `/lesson/from-a-to-${encodeURIComponent('ö')}`,
+        destination: '/lesson/from-a-to-o'
+      }
+    ]
   }
 };

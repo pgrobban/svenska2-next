@@ -1,8 +1,8 @@
 import classnames from "classnames";
 import { Lesson } from "../../models/types";
 import LessonLink from "../LessonLink";
-import { COURSES_PATH } from "./CourseList";
 import Link from "next/link";
+import { COURSES_PATH } from "../../helpers/utils";
 
 interface Props {
   lessons: Lesson[];

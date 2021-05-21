@@ -3,8 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Lesson } from "../models/types";
 import { carouselProps } from "../helpers/props";
-import IfDesktop from "../helpers/IfDesktop";
-import IfMobile from "../helpers/IfMobile";
+import { IfDesktop, IfMobile } from "../helpers/showBasedOnScreen";
 
 interface LessonViewProps {
   lesson: Lesson;

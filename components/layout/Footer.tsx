@@ -1,8 +1,7 @@
 import React from "react";
 import Icon from "../Icon";
 import { Button } from "@material-ui/core";
-import IfMobile from "../../helpers/IfMobile";
-import IfDesktop from "../../helpers/IfDesktop";
+import { IfMobile, IfDesktop } from "../../helpers/showBasedOnScreen";
 
 interface Props {}
 

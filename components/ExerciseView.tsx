@@ -2,8 +2,7 @@ import { useState } from "react";
 import { Lesson } from "../models/types";
 import { Button } from "@material-ui/core";
 import Icon from "./Icon";
-import IfDesktop from "../helpers/IfDesktop";
-import IfMobile from "../helpers/IfMobile";
+import { IfDesktop, IfMobile } from "../helpers/showBasedOnScreen";
 import { carouselProps } from "../helpers/props";
 import Carousel from "react-multi-carousel";
 

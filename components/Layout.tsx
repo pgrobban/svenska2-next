@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import TopMenu from "./layout/TopMenu";
-import IfMobile from "../helpers/IfMobile";
+import { IfMobile } from "../helpers/showBasedOnScreen";
 import { Button } from "@material-ui/core";
 import Icon from "./Icon";
 import NavigationSidebar from "../components/layout/NavigationSidebar";
@@ -28,7 +28,11 @@ interface LayoutProps {
   activeLessonUrlName?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, location, activeLessonUrlName }) => {
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  location,
+  activeLessonUrlName
+}) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
   return (
@@ -67,7 +71,10 @@ const Layout: React.FC<LayoutProps> = ({ children, location, activeLessonUrlName
             </Button>
           </IfMobile>
 
-          <NavigationSidebar location={location} activeLessonUrlName={activeLessonUrlName} />
+          <NavigationSidebar
+            location={location}
+            activeLessonUrlName={activeLessonUrlName}
+          />
         </nav>
 
         {/* Main content: shift it to the right by 300 pixels when the sidebar is visible */}
@@ -96,6 +103,6 @@ const Layout: React.FC<LayoutProps> = ({ children, location, activeLessonUrlName
       </ThemeProvider>
     </>
   );
-}
+};
 
 export default Layout;

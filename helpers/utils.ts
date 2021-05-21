@@ -93,3 +93,6 @@ export const getSwedishOrdinalDayToday = () => {
   const ordinalDay = SWEDISH_DAY_ORDINALS[currentDate.getDate() - 1];
   return addAlternateSwedishOrdinal(ordinalDay);
 }
+
+export const LESSONS_PATH = '/lesson';
+export const COURSES_PATH = '/course';

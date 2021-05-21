@@ -1,8 +1,8 @@
 import { getCourseByUrlName } from "../../helpers/utils";
-import IfDesktop from "../../helpers/IfDesktop";
-//import CourseOverview from "../components/CourseOverview";
+import { IfDesktop } from "../../helpers/showBasedOnScreen";
 import { useRouter } from 'next/router'
 import CourseOverview from "../../components/CourseOverview";
+import Layout from "../../components/Layout";
 
 interface Props {
   courseUrlName?: string;
@@ -23,7 +23,7 @@ const Lessons: React.FC<Props> = () => {
   }
 
   return (
-    <>
+    <Layout location="courses">
       <CourseOverview course={course} />
 
       <IfDesktop>
@@ -31,7 +31,7 @@ const Lessons: React.FC<Props> = () => {
           <a href="#top">Back to top</a>
         </div>
       </IfDesktop>
-    </>
+    </Layout>
   );
 };
 

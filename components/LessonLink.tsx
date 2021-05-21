@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LESSONS_PATH } from './layout/CourseList';
+import { LESSONS_PATH } from '../helpers/utils';
 import { Lesson } from '../models/types';
 
 interface Props {

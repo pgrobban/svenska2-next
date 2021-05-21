@@ -10,7 +10,7 @@ interface Props {
 }
 
 const AudioButton: React.FC<Props> = (props) => {
-  const { label, fileName, className, small } = props;
+  const { label, fileName, className } = props;
   const [audio, setAudio] = useState(null); // since we don't have Audio API on SSR
   useEffect(() => {
     setAudio(new Audio(`/sounds/${fileName}`));
@@ -18,10 +18,10 @@ const AudioButton: React.FC<Props> = (props) => {
 
   return (
     <Button
-      style={{ minWidth: label ? (small ? 105 : 150) : 0 }}
+      style={{ minWidth: label ? 105 : 0 }}
       variant="contained"
       color="primary"
-      className={`audio-button w3-margin-right-small ${className}`}
+      className={`audio-button w3-margin-right-small ${className || ''}`}
       onClick={() => audio.play()}
     >
       <Icon type="sound" style={{ marginRight: label ? 5 : 0 }} /> {label}
