@@ -2,6 +2,8 @@ import { cloneDeep, sampleSize } from 'lodash';
 import { find } from 'lodash';
 import { Lesson, Course, CorrectIncorrectMark } from '../models/types';
 
+export const SITE_NAME = 'Robban\'s Swedish Corner';
+
 export const LETTERS_OF_ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ';
 
 export const VOWELS = 'AEIOUYÅÄÖ';

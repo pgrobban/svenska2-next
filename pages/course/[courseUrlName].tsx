@@ -20,7 +20,7 @@ const CourseView: React.FC = () => {
   }
 
   return (
-    <Layout location="courses">
+    <Layout location="courses" title="Course overview">
       <CourseOverview course={course} />
 
       <IfDesktop>

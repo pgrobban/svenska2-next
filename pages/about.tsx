@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import Layout from "../components/Layout";
 
-interface Props {};
+interface Props {}
 
-const About: React.FC<Props> = () => {
+const FourOhFour: React.FC<Props> = () => {
   return (
-    <div>Hello About</div>
-  )
-}
+    <Layout location="about" title="About">
+      <div>This is the about page.</div>
+    </Layout>
+  );
+};
 
-export default About;
+export default FourOhFour;

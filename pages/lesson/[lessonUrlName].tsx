@@ -28,14 +28,14 @@ const LessonView: React.FC = () => {
   const lesson = getLessonByUrlName(courses, lessonUrlName);
   if (!lesson) {
     return (
-      <Layout location="lessons">
+      <Layout location="lessons" title="Oh no!">
         <span>This lesson does not exist yet.</span>
       </Layout>
     );
   }
 
   return (
-    <Layout location="lessons" activeLessonUrlName={lessonUrlName}>
+    <Layout location="lessons" activeLessonUrlName={lessonUrlName} title={lesson.name}>
       {viewingSection === SECTIONS.LESSONS && (
         <LessonContentView lessonChunks={lesson.chunks} />
       )}

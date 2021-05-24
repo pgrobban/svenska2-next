@@ -8,6 +8,7 @@ import NavigationSidebar from "../components/layout/NavigationSidebar";
 import UserController from "./UserController";
 import Footer from "./layout/Footer";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { SITE_NAME } from "../helpers/utils";
 
 export const siteTitle = "Robban's Swedish corner";
 
@@ -25,19 +26,22 @@ const theme = createMuiTheme({
 
 interface LayoutProps {
   location: string;
+  title: string;
   activeLessonUrlName?: string;
 }
 
 const Layout: React.FC<LayoutProps> = ({
   children,
   location,
-  activeLessonUrlName
+  activeLessonUrlName,
+  title
 }) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
   return (
     <>
       <Head>
+        <title>{title}{title ? ' - ' : ''}{SITE_NAME}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
