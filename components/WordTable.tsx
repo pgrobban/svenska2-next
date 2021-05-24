@@ -10,7 +10,8 @@ import {
 import AudioButton from "./AudioButton";
 import Icon from "./Icon";
 import { Word, WordClass } from "../models/types";
-import { getKeyByValue } from "../helpers/utils";
+
+const getKeyByValue = (obj: any, value: any) => Object.keys(obj).find(key => obj[key] === value);
 
 interface WordTableProps {
   words: Word[];

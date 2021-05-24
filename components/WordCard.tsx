@@ -9,7 +9,8 @@ import {
 } from "@material-ui/core";
 import { Word, WordClass } from "../models/types";
 import Icon from "./Icon";
-import { getKeyByValue } from "../helpers/utils";
+
+const getKeyByValue = (obj: any, value: any) => Object.keys(obj).find(key => obj[key] === value);
 
 interface WordCardProps {
   word: Word;

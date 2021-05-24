@@ -10,6 +10,9 @@ import {
   TableHead,
   TableRow
 } from "@material-ui/core";
+import AudioButton from "../../../../components/AudioButton";
+import WordList from "../../../../components/WordList";
+import { IfMobile, IfDesktop } from "../../../../helpers/showBasedOnScreen";
 
 const lessonChunks = [
   <div className="lesson-chunk">

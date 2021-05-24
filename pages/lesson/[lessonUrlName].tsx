@@ -8,6 +8,7 @@ import Icon from "../../components/Icon";
 import LessonContentView from "../../components/LessonContentView";
 import ExerciseView from "../../components/ExerciseView";
 import { isEmpty } from "lodash";
+import courses from "../../models/courses";
 
 const SECTIONS = {
   LESSONS: 0,
@@ -24,7 +25,7 @@ const LessonView: React.FC = () => {
     return null;
   }
 
-  const lesson = getLessonByUrlName(lessonUrlName);
+  const lesson = getLessonByUrlName(courses, lessonUrlName);
   if (!lesson) {
     return (
       <Layout location="lessons">
@@ -34,7 +35,7 @@ const LessonView: React.FC = () => {
   }
 
   return (
-    <Layout location="lessons">
+    <Layout location="lessons" activeLessonUrlName={lessonUrlName}>
       {viewingSection === SECTIONS.LESSONS && (
         <LessonContentView lessonChunks={lesson.chunks} />
       )}

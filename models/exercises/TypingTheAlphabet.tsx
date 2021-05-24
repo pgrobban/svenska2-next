@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button, TextField } from "@material-ui/core";
-import swedishKeyboard from "../../public/images/swedish_keyboard.svg";
 import { LETTERS_OF_ALPHABET } from "../../helpers/utils";
 import { ExerciseProps } from "../../models/types";
 import InstallingSwedishKeyboardInstructionsDialog, {
@@ -87,7 +86,7 @@ const TypingTheAlphabet: React.FunctionComponent<TypingTheAlphabetProps> = (
         where Å, Ä and Ö are located.
       </p>
 
-      <img className="w3-image" src={swedishKeyboard} alt="Swedish keyboard" />
+      <img className="w3-image" src={'/images/swedish_keyboard.svg'} alt="Swedish keyboard" />
 
       <p>Now you can begin typing in the text box below.</p>
 

@@ -13,10 +13,11 @@ import Link from "next/link";
 interface Props {
   isSideBarOpen: boolean;
   setIsSideBarOpen: (sideBarOpen: boolean) => void;
+  location?: string;
 }
 
 const TopMenu: React.FC<Props> = (props) => {
-  const { isSideBarOpen, setIsSideBarOpen } = props;
+  const { isSideBarOpen, setIsSideBarOpen, location } = props;
 
   return (
     <div className="w3-top w3-bar w3-top w3-left-align w3-large theme-swe theme-swe-top-nav">
@@ -39,7 +40,7 @@ const TopMenu: React.FC<Props> = (props) => {
           <a
             className={classnames([
               "w3-bar-item",
-              // { "theme-swe-active": location?.pathname?.startsWith("/lesson") },
+              { "theme-swe-active": location === "lessons" }
             ])}
           >
             Textbook
@@ -49,7 +50,7 @@ const TopMenu: React.FC<Props> = (props) => {
           <a
             className={classnames([
               "w3-bar-item",
-              // { "theme-swe-active": location?.pathname?.startsWith("/bites") },
+              { "theme-swe-active": location === "bites" }
             ])}
           >
             Language bites
@@ -59,7 +60,7 @@ const TopMenu: React.FC<Props> = (props) => {
           <a
             className={classnames([
               "w3-bar-item",
-              // { "theme-swe-active": location?.pathname?.startsWith("/forums") },
+              { "theme-swe-active": location === "forums" }
             ])}
           >
             Forums
@@ -69,7 +70,7 @@ const TopMenu: React.FC<Props> = (props) => {
           <a
             className={classnames([
               "w3-bar-item",
-              // { "theme-swe-active": location?.pathname === "/news" },
+              { "theme-swe-active": location === "news" }
             ])}
           >
             News
@@ -79,7 +80,7 @@ const TopMenu: React.FC<Props> = (props) => {
           <a
             className={classnames([
               "w3-bar-item",
-              // { "theme-swe-active": location?.pathname === "/about" },
+              { "theme-swe-active": location === "about" }
             ])}
           >
             About &amp; Contact

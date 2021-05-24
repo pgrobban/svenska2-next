@@ -3,6 +3,7 @@ import { IfDesktop } from "../../helpers/showBasedOnScreen";
 import { useRouter } from 'next/router'
 import CourseOverview from "../../components/CourseOverview";
 import Layout from "../../components/Layout";
+import courses from "../../models/courses";
 
 const CourseView: React.FC = () => {
 
@@ -13,7 +14,7 @@ const CourseView: React.FC = () => {
     return null;
   }
 
-  const course = getCourseByUrlName(courseUrlName);
+  const course = getCourseByUrlName(courses, courseUrlName);
   if (!course) {
     return null;
   }

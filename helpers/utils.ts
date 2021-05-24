@@ -1,5 +1,4 @@
 import { cloneDeep, sampleSize } from 'lodash';
-import courses from '../models/courses';
 import { find } from 'lodash';
 import { Lesson, Course, CorrectIncorrectMark } from '../models/types';
 
@@ -20,18 +19,18 @@ export const SWEDISH_MONTHS = ['januari', 'februari', 'mars', 'april', 'maj', 'j
 
 export const SWEDISH_WEEK_DAYS = ['måndag', 'tisdag', 'onsdag', 'torsdag', 'fredag', 'lördag', 'söndag'];
 
-export const getCourseNameByLessonUrlName = (lessonUrlName: string): (Course | undefined) => {
+export const getCourseNameByLessonUrlName = (courses, lessonUrlName: string): (Course | undefined) => {
   const foundCourse = find(courses, { lessons: [{ urlName: lessonUrlName }] }) as Course;
   return foundCourse;
 }
 
-export const getLessonByUrlName = (urlName: string): (Lesson | undefined) => {
-  const foundCourse = getCourseNameByLessonUrlName(urlName);
+export const getLessonByUrlName = (courses: Course[], urlName: string): (Lesson | undefined) => {
+  const foundCourse = getCourseNameByLessonUrlName(courses, urlName);
   const foundLesson = find(foundCourse?.lessons, { urlName });
   return foundLesson;
 }
 
-export const getCourseByUrlName = (urlName: string): (Course | undefined) => {
+export const getCourseByUrlName = (courses: Course[], urlName: string): (Course | undefined) => {
   const foundCourse = find(courses, { urlName }) as Course;
   return foundCourse;
 }
@@ -46,8 +45,6 @@ export const getBorderColorByMark = (correctIncorrectMark: CorrectIncorrectMark 
       return "none";
   }
 };
-
-export const getKeyByValue = (obj: any, value: any) => Object.keys(obj).find(key => obj[key] === value);
 
 export const generateRandomWords = (words: string[], numberOfWords: number) => sampleSize(words, numberOfWords);
 
