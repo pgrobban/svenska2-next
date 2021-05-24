@@ -3,12 +3,9 @@ import { IfDesktop } from "../../helpers/showBasedOnScreen";
 import { useRouter } from 'next/router'
 import CourseOverview from "../../components/CourseOverview";
 import Layout from "../../components/Layout";
+import courses from "../../models/courses";
 
-interface Props {
-  courseUrlName?: string;
-}
-
-const Lessons: React.FC<Props> = () => {
+const CourseView: React.FC = () => {
 
   const router = useRouter();
   const { courseUrlName } = router.query;
@@ -17,7 +14,7 @@ const Lessons: React.FC<Props> = () => {
     return null;
   }
 
-  const course = getCourseByUrlName(courseUrlName);
+  const course = getCourseByUrlName(courses, courseUrlName);
   if (!course) {
     return null;
   }
@@ -35,4 +32,4 @@ const Lessons: React.FC<Props> = () => {
   );
 };
 
-export default Lessons;
+export default CourseView;

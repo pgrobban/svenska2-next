@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React, { ReactElement, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Lesson } from "../models/types";
-import { carouselProps } from "../helpers/props";
 import { IfDesktop, IfMobile } from "../helpers/showBasedOnScreen";
+import { carouselProps } from "../helpers/props";
 
 interface LessonViewProps {
-  lesson: Lesson;
+  lessonChunks: ReactElement[];
 }
 
 const LessonContentView: React.FC<LessonViewProps> = (props) => {
-  const { lesson } = props;
-  const { chunks: lessonChunks } = lesson;
+  const { lessonChunks } = props;
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const slides = lessonChunks.map((chunk, index) => (
     <React.Fragment key={index}>{chunk}</React.Fragment>

@@ -21,7 +21,7 @@ interface CourseListProps {
 const CourseList: React.FC<CourseListProps> = (props) => {
   const { activeLessonUrlName } = props;
   const activeCourseName =
-    getCourseNameByLessonUrlName(activeLessonUrlName)?.name;
+    getCourseNameByLessonUrlName(courses, activeLessonUrlName)?.name;
   const [expandedCourse, setExpandedCourse] =
     useState<string | null | undefined>(activeCourseName);
 

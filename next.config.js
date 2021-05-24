@@ -30,21 +30,12 @@ module.exports = {
     return config;
   },
 
-  async redirects() {
-    return [
-      {
-        source: "/lessons",
-        destination: "/lesson/before-you-start",
-        permanent: true
-      }
-    ];
-  },
   async rewrites() {
     return [
       {
-        source: `/lesson/from-a-to-${encodeURIComponent('ö')}`,
-        destination: '/lesson/from-a-to-o'
+        source: "/lessons",
+        destination: "/lesson/before-you-start"
       }
-    ]
+    ];
   }
 };

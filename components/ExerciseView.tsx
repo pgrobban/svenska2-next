@@ -1,18 +1,19 @@
-import { useState } from "react";
-import { Lesson } from "../models/types";
+import { ReactElement, useState } from "react";
 import { Button } from "@material-ui/core";
 import Icon from "./Icon";
-import { IfDesktop, IfMobile } from "../helpers/showBasedOnScreen";
 import { carouselProps } from "../helpers/props";
 import Carousel from "react-multi-carousel";
+import React from "react";
+import { IfDesktop, IfMobile } from "../helpers/showBasedOnScreen";
+import Exercise, { CommonExerciseProps } from "./Exercise";
 
-interface LessonViewProps {
-  lesson: Lesson;
+interface ExerciseViewProps {
+  lessonName: string;
+  exercises: ReactElement<CommonExerciseProps>[];
 }
 
-const ExerciseView: React.FC<LessonViewProps> = (props) => {
-  const { lesson } = props;
-  const { exercises } = lesson;
+const ExerciseView: React.FC<ExerciseViewProps> = (props) => {
+  const { lessonName, exercises } = props;
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
 
   const onSlideChange = (newExerciseIndex: number) => {
@@ -22,7 +23,7 @@ const ExerciseView: React.FC<LessonViewProps> = (props) => {
 
   return (
     <div className="lesson w3-margin-bottom">
-      <h2 className="theme-swe-blue">{lesson.name} - Exercises</h2>
+      <h2 className="theme-swe-blue">{lessonName} - Exercises</h2>
 
       <div className="w3-margin-bottom">
         <IfMobile>

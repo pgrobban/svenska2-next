@@ -54,6 +54,7 @@ const Layout: React.FC<LayoutProps> = ({
         <TopMenu
           isSideBarOpen={isSideBarOpen}
           setIsSideBarOpen={setIsSideBarOpen}
+          location={location}
         />
 
         <nav
