@@ -1401,7 +1401,7 @@ a {
 }
 
 @media (min-width: 1200px) {
-  .lesson {
+  .main-centered {
     width: 600px;
     margin: 0 auto;
   }

@@ -21,7 +21,7 @@ const LessonContentView: React.FC<LessonViewProps> = (props) => {
   };
 
   return (
-    <div className="lesson w3-margin-bottom">
+    <div className="main-centered w3-margin-bottom">
       <IfMobile>
         <Carousel
           {...carouselProps}
