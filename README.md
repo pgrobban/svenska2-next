@@ -1,6 +1,8 @@
 ## Welcome to Robban's Swedish Corner!
 
-This is the GitHub repository for robbansswedishcorner.com, a website dedicated to learners of the Swedish language. You may submit PRs to this repository.
+This is the GitHub repository for [Robban's Swedish Corner](http://robbansswedishcorner.com), a website with the aim of teaching the Swedish language to beginners and advanced learners alike. 
+
+You may submit PRs to this repository.
 
 Please contact me at admin[at]robbansswedishcorner[dot]com if you have any technical inquires.
 
