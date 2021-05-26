@@ -15,10 +15,10 @@ const Footer: React.FC<Props> = () => {
     <div>
       <span className="w3-margin-right">Follow us on</span>
       <Button variant="contained" color="primary">
-        <Icon type="facebook" size="m" />
+        <Icon type="facebook" size="m" compact />
       </Button>
       <Button variant="contained" color="primary">
-        <Icon type="instagram" size="m" />
+        <Icon type="instagram" size="m" compact />
       </Button>
     </div>
   );

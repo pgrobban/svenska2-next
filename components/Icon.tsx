@@ -1,6 +1,4 @@
 import React from 'react';
-import FacebookIcon from '../public/images/facebook.svg';
-import InstagramIcon from '../public/images/instagram.svg';
 import { 
   ArrowLeft as ArrowLeftIcon, 
   ArrowRight as ArrowRightIcon,
@@ -33,8 +31,8 @@ const icons = {
   help: <HelpIcon />,
   info: <InfoIcon />,
   // svg icons
-  facebook: <FacebookIcon />,
-  instagram: <InstagramIcon />,
+  facebook: <img src="/images/facebook.svg" />,
+  instagram: <img src="/images/instagram.svg" />,
   arrowRight: <ArrowRightIcon />,
   arrowLeft: <ArrowLeftIcon />
 };
@@ -45,6 +43,7 @@ interface Props {
   color?: string;
   size?: 's' | 'm' | 'l' | 'xl';
   style?: object;
+  compact?: boolean;
 }
 
 const sizes = {
@@ -55,18 +54,17 @@ const sizes = {
 };
 
 const Icon: React.FC<Props> = (props) => {
-  const { type, color, className, size, style } = props;
+  const { type, color, className, size } = props;
   const resolvedSize = sizes[size || 'm'];
 
   return React.cloneElement(
-    // @ts-ignore
     icons[type],
     {
-      style: Object.assign({}, {
+      style: {
         color,
         fontSize: resolvedSize,
         width: resolvedSize
-      }, style),
+      },
       className
     }
   );
