@@ -6,7 +6,7 @@ import {
   getBorderColorByMark,
   normalizeInputs
 } from "../../helpers/utils";
-import { CorrectIncorrectMark, ExerciseProps } from "../types";
+import { CorrectIncorrectMark, ExerciseProps } from "../../models/types";
 
 interface WriteVerbFormsProps extends ExerciseProps {
   wordsInDictionaryFormWithMeaning: string[];

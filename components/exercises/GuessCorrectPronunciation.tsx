@@ -2,7 +2,7 @@ import React, { ReactElement, useState } from "react";
 import AudioButton from "../../components/AudioButton";
 import { sample, without } from "lodash";
 import { Button } from "@material-ui/core";
-import { ExerciseProps } from "../types";
+import { ExerciseProps } from "../../models/types";
 
 export interface GuessCorrectPronunciationProps extends ExerciseProps {
   requiredCorrectAnswersInARow: number;

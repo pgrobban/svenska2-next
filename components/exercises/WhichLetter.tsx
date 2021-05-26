@@ -2,7 +2,7 @@ import React, { useState, ReactElement } from "react";
 import AudioButton from "../../components/AudioButton";
 import { sample, map } from "lodash";
 import { Button } from "@material-ui/core";
-import { ExerciseProps } from "../types";
+import { ExerciseProps } from "../../models/types";
 
 export interface WhichLetterProps extends ExerciseProps {
   requiredCorrectAnswersInARow: number;

@@ -10,7 +10,7 @@ import {
   TableCell,
   TableRow
 } from "@material-ui/core";
-import { CorrectIncorrectMark, ExerciseProps } from "../types";
+import { CorrectIncorrectMark, ExerciseProps } from "../../models/types";
 import {
   generateRandomWords,
   getBorderColorByMark,

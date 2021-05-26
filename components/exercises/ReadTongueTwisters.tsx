@@ -1,7 +1,7 @@
 import React from "react";
 import AudioButton from "../../components/AudioButton";
 import { Button } from "@material-ui/core";
-import { ExerciseProps } from "../types";
+import { ExerciseProps } from "../../models/types";
 
 interface TongueTwister {
   header: string;

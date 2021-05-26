@@ -7,7 +7,7 @@ import {
   getEmptyStringsArray,
   getNullArray
 } from "../../helpers/utils";
-import { CorrectIncorrectMark, ExerciseProps } from "../types";
+import { CorrectIncorrectMark, ExerciseProps } from "../../models/types";
 
 const defaultInstructions = (
   <>

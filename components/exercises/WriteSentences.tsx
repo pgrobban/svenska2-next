@@ -6,7 +6,7 @@ import {
   getBorderColorByMark,
   trimInputs
 } from "../../helpers/utils";
-import { CorrectIncorrectMark, ExerciseProps } from "../types";
+import { CorrectIncorrectMark, ExerciseProps } from "../../models/types";
 
 interface WriteSentencesProps extends ExerciseProps {
   sentences: string[];
