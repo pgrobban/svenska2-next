@@ -1,6 +1,6 @@
 import React from "react";
 import Exercise from "../../../components/Exercise";
-import ReadTongueTwisters from "../../exercises/ReadTongueTwisters";
+import ReadTongueTwisters from "../../../components/exercises/ReadTongueTwisters";
 import { ExerciseProps } from "../../types";
 
 const exercises = [

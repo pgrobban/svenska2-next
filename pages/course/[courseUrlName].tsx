@@ -2,7 +2,7 @@ import { getCourseByUrlName } from "../../helpers/utils";
 import { IfDesktop } from "../../helpers/showBasedOnScreen";
 import { useRouter } from 'next/router'
 import CourseOverview from "../../components/CourseOverview";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import courses from "../../models/courses";
 
 const CourseView: React.FC = () => {

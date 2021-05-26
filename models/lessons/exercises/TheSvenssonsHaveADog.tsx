@@ -1,11 +1,11 @@
 import React from "react";
 import Exercise from "../../../components/Exercise";
-import ChooseTheCorrectOption from "../../exercises/ChooseTheCorrectOption";
-import WriteSentences from "../../exercises/WriteSentences";
+import ChooseTheCorrectOption from "../../../components/exercises/ChooseTheCorrectOption";
+import WriteSentences from "../../../components/exercises/WriteSentences";
 import WrittenWordTest, {
   swedishToEnglishDefaultInstructions,
   englishToSwedishDefaultInstructions
-} from "../../exercises/WrittenWordTest";
+} from "../../../components/exercises/WrittenWordTest";
 import { ExerciseProps } from "../../types";
 
 const exercises = [

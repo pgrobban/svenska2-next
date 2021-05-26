@@ -2,11 +2,11 @@ import { Button } from "@material-ui/core";
 import classnames from "classnames";
 import Link from "next/link";
 import React, { useState } from "react";
-import { LESSONS_PATH } from "../../helpers/utils";
-import courses from "../../models/courses";
-import { getCourseNameByLessonUrlName } from "../../helpers/utils";
-import Icon from "../Icon";
-import LessonList from "./LessonList";
+import { LESSONS_PATH } from "../helpers/utils";
+import courses from "../models/courses";
+import { getCourseNameByLessonUrlName } from "../helpers/utils";
+import Icon from "./Icon";
+import LessonList from "./layout/LessonList";
 
 const BEFORE_YOU_START_URL_NAME = "before-you-start";
 

@@ -1,7 +1,7 @@
 import { getLessonByUrlName } from "../../helpers/utils";
 import { IfDesktop } from "../../helpers/showBasedOnScreen";
 import { useRouter } from "next/router";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import React, { useState } from "react";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import Icon from "../../components/Icon";

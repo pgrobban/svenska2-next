@@ -1,6 +1,6 @@
 import React from "react";
 import Exercise from "../../../components/Exercise";
-import GuessCorrectPronunciation from "../../exercises/GuessCorrectPronunciation";
+import GuessCorrectPronunciation from "../../../components/exercises/GuessCorrectPronunciation";
 import { ExerciseProps } from "../../types";
 
 const guessCorrectPronunciationGInstructions = (

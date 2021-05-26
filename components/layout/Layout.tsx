@@ -1,14 +1,14 @@
 import Head from "next/head";
 import { useState } from "react";
-import TopMenu from "./layout/TopMenu";
-import { IfMobile } from "../helpers/showBasedOnScreen";
+import TopMenu from "./TopMenu";
+import { IfMobile } from "../../helpers/showBasedOnScreen";
 import { Button } from "@material-ui/core";
-import Icon from "./Icon";
-import NavigationSidebar from "../components/layout/NavigationSidebar";
-import UserController from "./UserController";
-import Footer from "./layout/Footer";
+import Icon from "../Icon";
+import NavigationSidebar from "./NavigationSidebar";
+import UserController from "../UserController";
+import Footer from "./Footer";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { SITE_NAME } from "../helpers/utils";
+import { SITE_NAME } from "../../helpers/utils";
 
 export const siteTitle = "Robban's Swedish corner";
 

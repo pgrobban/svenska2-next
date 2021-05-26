@@ -1,9 +1,9 @@
 import React from "react";
 import Exercise from "../../../components/Exercise";
-import ChooseTheCorrectOption from "../../exercises/ChooseTheCorrectOption";
-import CompleteTheSelfIntroduction from "../../exercises/CompleteTheSelfIntroduction";
-import WhoAreThey from "../../exercises/WhoAreThey";
-import WrittenWordTest, { englishToSwedishDefaultInstructions, swedishToEnglishDefaultInstructions } from "../../exercises/WrittenWordTest";
+import ChooseTheCorrectOption from "../../../components/exercises/ChooseTheCorrectOption";
+import CompleteTheSelfIntroduction from "../../../components/exercises/CompleteTheSelfIntroduction";
+import WhoAreThey from "../../../components/exercises/WhoAreThey";
+import WrittenWordTest, { englishToSwedishDefaultInstructions, swedishToEnglishDefaultInstructions } from "../../../components/exercises/WrittenWordTest";
 import { ExerciseProps } from "../../types";
 
 const exercises = [

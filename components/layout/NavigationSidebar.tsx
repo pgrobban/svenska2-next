@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CourseList from "./CourseList";
+import CourseList from "../CourseList";
 import { IfDesktop, IfMobile } from "../../helpers/showBasedOnScreen";
 import React from "react";
 

@@ -1,10 +1,10 @@
 import React from "react";
-import ChooseTheCorrectOption from "../../exercises/ChooseTheCorrectOption";
+import ChooseTheCorrectOption from "../../../components/exercises/ChooseTheCorrectOption";
 import WrittenWordTest, {
   swedishToEnglishDefaultInstructions,
   englishToSwedishDefaultInstructions
-} from "../../exercises/WrittenWordTest";
-import WriteVerbForms from "../../exercises/WriteVerbForms";
+} from "../../../components/exercises/WrittenWordTest";
+import WriteVerbForms from "../../../components/exercises/WriteVerbForms";
 import Exercise from "../../../components/Exercise";
 import { ExerciseProps } from "../../types";
 

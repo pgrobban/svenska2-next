@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@material-ui/core";
 import Icon from "../components/Icon";
 import Link from "next/link";
-import Layout from "../components/Layout";
+import Layout from "../components/layout/Layout";
 
 interface Props {}
 

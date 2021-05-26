@@ -1,34 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Welcome to Robban's Swedish Corner!
+
+This is the GitHub repository for robbansswedishcorner.com, a website dedicated to learners of the Swedish language. You may submit PRs to this repository.
+
+Please contact me at admin[at]robbansswedishcorner[dot]com if you have any technical inquires.
+
+
+### Table of contents
+
+
+
+- [Copyright](#copyright)
+- [Tech stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Building](#building)
+- [Folder structure](#folder-structure)
+
+
+## Copyright
+
+You may browse and use the code as you wish, however, you may not use the lesson contents or images without permission.
+
+## Tech stack
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). The project includes frontend and backend components written in Typescript. Frontend components are written in React with [`Material UI`](https://material-ui.com).
 
 ## Getting Started
 
-First, run the development server:
+If you haven't done so already, download and install [NodeJS](https://nodejs.org/).
+
+Clone the repo and go to the svenska2-next folder:
+
+```
+git clone https://github.com/pgrobban/svenska2-next.git
+cd svenska2-next
+```
+
+Install the dependencies:
+
+```
+npm install
+```
+
+Next, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. If you wish to use a different port, change the ```dev``` script in package.json 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+ "dev": "next dev -p 3001"
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+and restart the server. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You are now ready to begin developing. Since NextJS has a built in hot reloader, you don't need to restart the development server when making changes; you should see changes in your browser as soon as you save files.
 
-## Learn More
+## Building for production
 
-To learn more about Next.js, take a look at the following resources:
+The development server is suitable for development but slow and insecure for production use. To make a production build, use the following commands:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If everything went well, you can open your browser on the same URL as in the development step. 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Folder structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The ```components``` folder contains frontend components that can be reused over multiple views. 
+
+The subfolder ```exercises``` contains base components for exercises.Lessons can have different instances of exercise components.
+The subfolder ```layout``` that the desgn is built upon. Specifically, the file ```Layout.tsx``` should be used as the base layout for all views.
+
+The ```helpers``` folder contains frontend helper functions, type definitions and default props for external dependency components.
+
+The ```models``` folder contains course and lesson contents, as well as exercises components.
+
+The ```pages``` folder contains routes for the server-side rendering of the views. These pages are matched with the URL either statically (such as ```/about``` matches ```about.tsx```) or dynamically using parameters (such as ```lesson/from-a-to-ö``` will match the ```lesson/[lessonUrlName].tsx``` route).
+
+The ```public``` folder contains all asset files that the browser is allowed to see, such as images, sounds and fonts.
