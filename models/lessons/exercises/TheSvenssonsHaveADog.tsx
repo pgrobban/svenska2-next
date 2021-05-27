@@ -14,7 +14,7 @@ const exercises = [
     id="written-word-test-the-svenssons-have-a-dog-1"
     numberInLesson={1}
     title="What do the words mean?"
-    ExerciseComponent={WrittenWordTest as React.FC<ExerciseProps>}
+    ExerciseComponent={WrittenWordTest}
     exerciseComponentProps={{
       words: [
         "hund",
@@ -56,7 +56,7 @@ const exercises = [
     id="written-word-test-the-svenssons-have-a-dog-2"
     numberInLesson={2}
     title="How do you say it in Swedish?"
-    ExerciseComponent={WrittenWordTest as React.FC<ExerciseProps>}
+    ExerciseComponent={WrittenWordTest}
     exerciseComponentProps={{
       words: [
         "dog",
@@ -98,7 +98,7 @@ const exercises = [
     id="choose-correct-option-the-svenssons-have-a-dog"
     numberInLesson={3}
     title="Choose the correct option"
-    ExerciseComponent={ChooseTheCorrectOption as React.FC<ExerciseProps>}
+    ExerciseComponent={ChooseTheCorrectOption}
     exerciseComponentProps={{
       instructions: (
         <>
@@ -149,7 +149,7 @@ const exercises = [
     id="write-sentences-the-svenssons-have-a-dog"
     numberInLesson={4}
     title="Write sentences"
-    ExerciseComponent={WriteSentences as React.FC<ExerciseProps>}
+    ExerciseComponent={WriteSentences}
     exerciseComponentProps={{
       sentences: [
         "Anna has a big dog.",

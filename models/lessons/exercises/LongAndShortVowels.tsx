@@ -9,7 +9,7 @@ const exercises = [
     id={"tongue-twister-sh"}
     numberInLesson={1}
     title={"Tongue twister - SH sound"}
-    ExerciseComponent={ReadTongueTwisters as React.FC<ExerciseProps>}
+    ExerciseComponent={ReadTongueTwisters}
     exerciseComponentProps={{
       tongueTwisters: [
         {

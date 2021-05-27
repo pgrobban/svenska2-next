@@ -34,14 +34,14 @@ const exercises = [
     id={"typing-the-alphabet"}
     numberInLesson={1}
     title={"Typing the alphabet"}
-    ExerciseComponent={TypingTheAlphabet as React.FC<ExerciseProps>}
+    ExerciseComponent={TypingTheAlphabet}
   />,
   <Exercise
     key={2}
     id={"which-letter-vowels"}
     numberInLesson={2}
     title={"Which letter? - Vowels"}
-    ExerciseComponent={WhichLetter as React.FC<ExerciseProps>}
+    ExerciseComponent={WhichLetter}
     exerciseComponentProps={{
       requiredCorrectAnswersInARow: 10,
       letterChoices: VOWELS.split(""),
@@ -53,7 +53,7 @@ const exercises = [
     id={"which-letter-consonants"}
     numberInLesson={3}
     title={"Which letter? - Consonants"}
-    ExerciseComponent={WhichLetter as React.FC<ExerciseProps>}
+    ExerciseComponent={WhichLetter}
     exerciseComponentProps={{
       requiredCorrectAnswersInARow: 15,
       letterChoices: CONSONANTS.split(""),
@@ -65,7 +65,7 @@ const exercises = [
     id={"write-what-you-hear-names"}
     numberInLesson={4}
     title={"Write what you hear"}
-    ExerciseComponent={WriteWhatYouHear as React.FC<ExerciseProps>}
+    ExerciseComponent={WriteWhatYouHear}
     exerciseComponentProps={{
       words: [
         "Gustav",

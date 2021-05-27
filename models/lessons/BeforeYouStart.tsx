@@ -281,7 +281,7 @@ export const chunks = [
     <p className="w3-right-align">-Robban</p>
 
     <Button color="primary" className="w3-right" variant="contained">
-      <Link href="/lessons/from-a-to-ö">
+      <Link href="/lesson/from-a-to-ö">
         <a>To the first lesson</a>
       </Link>
     </Button>

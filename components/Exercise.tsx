@@ -34,7 +34,7 @@ const Exercise: React.FC<CommonExerciseProps> = (
         <br />
         {title}
       </h3>
-      {exerciseCompletionDate && <small>Completed on {exerciseCompletionDate.toLocaleString(DateTime.DATETIME_SHORT)}</small>}
+      {exerciseCompletionDate && <small>Completed on {exerciseCompletionDate.setLocale('en-US').toFormat('DD')}</small>}
 
       <ExerciseComponent
         onMarkAsCompleted={!exerciseCompletionDate ? () => setExerciseCompletionDate(DateTime.local()) : () => {}}

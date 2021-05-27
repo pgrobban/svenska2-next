@@ -84,7 +84,7 @@ const exercises = [
     id={"guess-correct-pronunciation-g"}
     numberInLesson={1}
     title={"Guess correct pronunciation - G"}
-    ExerciseComponent={GuessCorrectPronunciation as React.FC<ExerciseProps>}
+    ExerciseComponent={GuessCorrectPronunciation}
     exerciseComponentProps={{
       instructions: guessCorrectPronunciationGInstructions,
       wordChoices: guessCorrectPronunciationGWordChoices,
@@ -97,7 +97,7 @@ const exercises = [
     id={"guess-correct-pronunciation-k"}
     numberInLesson={2}
     title={"Guess correct pronunciation - K"}
-    ExerciseComponent={GuessCorrectPronunciation as React.FC<ExerciseProps>}
+    ExerciseComponent={GuessCorrectPronunciation}
     exerciseComponentProps={{
       instructions: guessCorrectPronunciationKInstructions,
       wordChoices: guessCorrectPronunciationKWordChoices,

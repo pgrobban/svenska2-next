@@ -14,7 +14,7 @@ const exercises = [
     id="written-word-test-what-are-they-doing-1"
     numberInLesson={1}
     title="What do the words mean?"
-    ExerciseComponent={WrittenWordTest as React.FC<ExerciseProps>}
+    ExerciseComponent={WrittenWordTest}
     exerciseComponentProps={{
       words: [
         "leker",
@@ -64,7 +64,7 @@ const exercises = [
     id="written-word-test-what-are-they-doing-2"
     numberInLesson={2}
     title="How do you say it in Swedish?"
-    ExerciseComponent={WrittenWordTest as React.FC<ExerciseProps>}
+    ExerciseComponent={WrittenWordTest}
     exerciseComponentProps={{
       words: [
         "(child's) play",
@@ -114,7 +114,7 @@ const exercises = [
     id="choose-correct-option-what-are-they-doing"
     numberInLesson={3}
     title="Choose the correct option"
-    ExerciseComponent={ChooseTheCorrectOption as React.FC<ExerciseProps>}
+    ExerciseComponent={ChooseTheCorrectOption}
     exerciseComponentProps={{
       sentences: [
         "Frida __ ett mejl (an email).",
@@ -145,7 +145,7 @@ const exercises = [
     id="write-verb-forms"
     numberInLesson={4}
     title="Dictionary form and present tense"
-    ExerciseComponent={WriteVerbForms as React.FC<ExerciseProps>}
+    ExerciseComponent={WriteVerbForms}
     exerciseComponentProps={{
       wordsInDictionaryFormWithMeaning: [
         "leka",

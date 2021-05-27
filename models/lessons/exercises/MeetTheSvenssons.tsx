@@ -12,14 +12,14 @@ const exercises = [
     id={"who-are-they"}
     numberInLesson={1}
     title={"Who are they?"}
-    ExerciseComponent={WhoAreThey as React.FC<ExerciseProps>}
+    ExerciseComponent={WhoAreThey}
   />,
   <Exercise
     key={2}
     id="written-word-test-meet-the-svenssons-1"
     numberInLesson={2}
     title="What do the words mean?"
-    ExerciseComponent={WrittenWordTest as React.FC<ExerciseProps>}
+    ExerciseComponent={WrittenWordTest}
     exerciseComponentProps={{
       words: [
         "hej",
@@ -67,7 +67,7 @@ const exercises = [
     id="written-word-test-meet-the-svenssons-2"
     numberInLesson={3}
     title="How do you say it in Swedish?"
-    ExerciseComponent={WrittenWordTest as React.FC<ExerciseProps>}
+    ExerciseComponent={WrittenWordTest}
     exerciseComponentProps={{
       words: [
         "hi",
@@ -115,7 +115,7 @@ const exercises = [
     id="choose-correct-option-meet-the-svenssons"
     numberInLesson={4}
     title="Choose the correct option"
-    ExerciseComponent={ChooseTheCorrectOption as React.FC<ExerciseProps>}
+    ExerciseComponent={ChooseTheCorrectOption}
     exerciseComponentProps={{
       sentences: [
         "Jenny __ i London.",
@@ -142,7 +142,7 @@ const exercises = [
     id="complete-the-self-introduction"
     numberInLesson={5}
     title="Complete the self introduction"
-    ExerciseComponent={CompleteTheSelfIntroduction as React.FC<ExerciseProps>}
+    ExerciseComponent={CompleteTheSelfIntroduction}
   />
 ];
 

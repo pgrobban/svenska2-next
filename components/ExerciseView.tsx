@@ -5,7 +5,7 @@ import { carouselProps } from "../helpers/props";
 import Carousel from "react-multi-carousel";
 import React from "react";
 import { IfDesktop, IfMobile } from "../helpers/showBasedOnScreen";
-import Exercise, { CommonExerciseProps } from "./Exercise";
+import { CommonExerciseProps } from "./Exercise";
 
 interface ExerciseViewProps {
   lessonName: string;
@@ -22,7 +22,7 @@ const ExerciseView: React.FC<ExerciseViewProps> = (props) => {
   };
 
   return (
-    <div className="lesson w3-margin-bottom">
+    <div className="main-centered w3-margin-bottom">
       <h2 className="theme-swe-blue">{lessonName} - Exercises</h2>
 
       <div className="w3-margin-bottom">
