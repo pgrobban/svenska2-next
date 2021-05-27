@@ -156,9 +156,9 @@ const lessonChunks = [
     </p>
 
     <p>
-      It also has this pronounciation in the middle or end of words.
+      It also has this pronunciation in the middle or end of words.
       <br />
-      When the K sound appears after a short vowel, it is usally spelled CK,
+      When the K sound appears after a short vowel, it is usually spelled CK,
       like in English.
     </p>
 
