@@ -4,7 +4,7 @@ import { LETTERS_OF_ALPHABET } from "../../helpers/utils";
 import { ExerciseProps } from "../../models/types";
 import InstallingSwedishKeyboardInstructionsDialog, {
   OperatingSystem
-} from "../../components/InstallingSwedishKeyboardInstructionsDialog";
+} from "../InstallingSwedishKeyboardInstructionsDialog";
 
 const REQUIRED_TIMES_FOR_COMPLETION = 3;
 

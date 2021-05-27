@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AudioButton from "../../components/AudioButton";
+import AudioButton from "../AudioButton";
 import { Button, TextField } from "@material-ui/core";
 import {
   generateRandomWords,

@@ -10,7 +10,7 @@ import {
 import { CorrectIncorrectMark, ExerciseProps } from "../../models/types";
 import InstallingSwedishKeyboardInstructionsDialog, {
   OperatingSystem
-} from "../../components/InstallingSwedishKeyboardInstructionsDialog";
+} from "../InstallingSwedishKeyboardInstructionsDialog";
 import {
   getEmptyStringsArray,
   getNullArray,
