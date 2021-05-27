@@ -7,7 +7,7 @@ import {
   Button
 } from "@material-ui/core";
 import React, { useState } from "react";
-import { ExerciseProps } from "../types";
+import { ExerciseProps } from "../../models/types";
 
 interface CompleteTheSelfIntroductionProps extends ExerciseProps {}
 
