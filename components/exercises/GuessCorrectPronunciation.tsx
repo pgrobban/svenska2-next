@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from "react";
-import AudioButton from "../../components/AudioButton";
+import AudioButton from "../AudioButton";
 import { sample, without } from "lodash";
 import { Button } from "@material-ui/core";
 import { ExerciseProps } from "../../models/types";
