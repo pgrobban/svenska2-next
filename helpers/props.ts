@@ -6,5 +6,7 @@ export const carouselProps = {
       items: 1,
     }
   },
-  className: 'w3-margin-bottom'
+  className: 'w3-margin-bottom',
+  ssr: true,
+  centerMode: false
 };

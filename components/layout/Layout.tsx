@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TopMenu from "./TopMenu";
 import { IfMobile } from "../../helpers/showBasedOnScreen";
 import { Button } from "@material-ui/core";
@@ -37,6 +37,9 @@ const Layout: React.FC<LayoutProps> = ({
   title
 }) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+  useEffect(() => { // close sidebar when user is navigating to a new lesson
+    setIsSideBarOpen(false);
+  }, [activeLessonUrlName])
 
   return (
     <>
@@ -83,7 +86,7 @@ const Layout: React.FC<LayoutProps> = ({
         </nav>
 
         {/* Main content: shift it to the right by 300 pixels when the sidebar is visible */}
-        <div className="w3-main" style={{ marginLeft: 300 }}>
+        <div className="w3-main" style={{ marginLeft: 300 }} onClick={() => setIsSideBarOpen(false)}>
           <div className="w3-row w3-padding-64 theme-swe-main">
             <div className="w3-threequarter w3-container">{children}</div>
             <div className="w3-quarter w3-container">
