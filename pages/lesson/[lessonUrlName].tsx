@@ -18,22 +18,25 @@ const SECTIONS = {
 
 const getInitialViewingSection = (locationHash) => {
   switch (locationHash) {
-    case '#lesson':
+    case "#lesson":
       return SECTIONS.LESSON;
-    case '#exercises':
+    case "#exercises":
       return SECTIONS.EXERCISES;
-    case '#feedback':
+    case "#feedback":
       return SECTIONS.FEEDBACK_AND_QUESTIONS;
     default:
       return SECTIONS.LESSON;
   }
-}
+};
 
 const LessonView: React.FC = () => {
   const router = useRouter();
   const { lessonUrlName } = router.query;
   const [viewingSection, setViewingSection] = useState(SECTIONS.LESSON);
-  useEffect(() => setViewingSection(getInitialViewingSection(location.hash)), []);
+  useEffect(
+    () => setViewingSection(getInitialViewingSection(location.hash)),
+    []
+  );
 
   if (typeof lessonUrlName !== "string") {
     return null;
@@ -43,7 +46,20 @@ const LessonView: React.FC = () => {
   if (!lesson) {
     return (
       <Layout location="lessons" title="Oh no!">
-        <span>This lesson does not exist yet.</span>
+        <span>
+          This lesson link is invalid. If you followed a link to get here,
+          please file a bug report in the forums.
+        </span>
+      </Layout>
+    );
+  }
+
+  if (isEmpty(lesson.chunks)) {
+    return (
+      <Layout location="lessons" title="Oh no!">
+        <span>
+          This lesson hasn't been written yet :(
+        </span>
       </Layout>
     );
   }

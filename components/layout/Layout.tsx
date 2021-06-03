@@ -37,14 +37,19 @@ const Layout: React.FC<LayoutProps> = ({
   title
 }) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-  useEffect(() => { // close sidebar when user is navigating to a new lesson
+  useEffect(() => {
+    // close sidebar when user is navigating to a new lesson
     setIsSideBarOpen(false);
-  }, [activeLessonUrlName])
+  }, [activeLessonUrlName]);
 
   return (
     <>
       <Head>
-        <title>{title}{title ? ' - ' : ''}{SITE_NAME}</title>
+        <title>
+          {title}
+          {title ? " - " : ""}
+          {SITE_NAME}
+        </title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -86,9 +91,26 @@ const Layout: React.FC<LayoutProps> = ({
         </nav>
 
         {/* Main content: shift it to the right by 300 pixels when the sidebar is visible */}
-        <div className="w3-main" style={{ marginLeft: 300 }} onClick={() => setIsSideBarOpen(false)}>
+        <div
+          className="w3-main"
+          style={{ marginLeft: 300 }}
+          onClick={() => setIsSideBarOpen(false)}
+        >
           <div className="w3-row w3-padding-64 theme-swe-main">
-            <div className="w3-threequarter w3-container">{children}</div>
+            <div className="w3-threequarter w3-container">
+              {(location === "404" || title === "Oh no!") && (
+                <>
+                  <h3>Oh no!</h3>
+                  <img
+                    className="table-image centered"
+                    alt="Sad panda"
+                    title="Sad panda :("
+                    src="/images/sad-panda.svg"
+                  />
+                </>
+              )}
+              {children}
+            </div>
             <div className="w3-quarter w3-container">
               <div className="w3-hide-small">
                 <UserController />
