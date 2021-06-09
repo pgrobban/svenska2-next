@@ -1,5 +1,6 @@
 import { Bite } from "./types";
 import AboutLanguageBitesChunks from './lessons/AboutBites';
+import UnderstandingJuChunks from './lessons/bites/UnderstandingJu';
 
 const bites: Bite[] = [
   {
@@ -11,7 +12,7 @@ const bites: Bite[] = [
   {
     name: 'Understanding "ju"',
     urlName: 'understanding-ju',
-    chunks: [],
+    chunks: UnderstandingJuChunks,
     exercises: []
   },
   {

@@ -16,9 +16,6 @@ const CourseList: React.FC<CourseListProps> = (props) => {
 
   return (
     <div className="bite-list">
-      <h3 className="w3-margin-left" style={{ marginBottom: 0 }}>
-        Language Bites
-      </h3>
       <ul className="w3-ul w3-animate-left">
         {bitesInBiteList.map((bite, index) => (
           <li

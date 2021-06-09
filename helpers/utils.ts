@@ -100,4 +100,4 @@ export const getSwedishOrdinalDayToday = () => {
 
 export const LESSONS_PATH = '/lesson';
 export const COURSES_PATH = '/course';
-export const BITES_PATH = '/bites';
+export const BITES_PATH = '/bite';

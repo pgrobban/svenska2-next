@@ -1386,7 +1386,7 @@ a {
 
 @media (min-width: 768px) {
   .blackboard h2 {
-    font-size: 64px;
+    font-size: 50px;
   }
 }
 @media (max-width: 767px) {
