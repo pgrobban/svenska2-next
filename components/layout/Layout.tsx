@@ -71,7 +71,7 @@ const Layout: React.FC<LayoutProps> = ({
 
         <nav
           className="w3-sidebar w3-bar-block w3-collapse w3-large theme-swe theme-swe-nav w3-animate-left"
-          id="mySidebar"
+          id="navigation-sidebar"
           style={{ display: isSideBarOpen ? "block" : "none" }}
         >
           <IfMobile>

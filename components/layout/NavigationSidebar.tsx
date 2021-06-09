@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CourseList from "../CourseList";
+import BiteList from "../BiteList";
 import { IfDesktop, IfMobile } from "../../helpers/showBasedOnScreen";
 import React from "react";
 
@@ -10,8 +11,8 @@ interface Props {
 
 const NavigationSidebar = (props: Props) => {
   const { location, activeLessonUrlName } = props;
+  const isLessonOpen = ["lessons", "courses", "bites"].includes(location);
 
-  const isLessonOpen = ['lessons', 'courses', 'exercises'].includes(location);
   return (
     <>
       <IfMobile>
@@ -22,15 +23,20 @@ const NavigationSidebar = (props: Props) => {
 
           <ul className="w3-ul theme-swe-hover">
             <li>
-              <Link href="/lessons"><a>Textbook</a></Link>
-              {isLessonOpen && (
+              <Link href="/lessons">
+                <a>Textbook</a>
+              </Link>
+              {["lessons", "courses"].includes(location) && (
                 <CourseList activeLessonUrlName={activeLessonUrlName} />
               )}
             </li>
             <li>
-              <Link href="/language-bites">
+              <Link href="/bites">
                 <a>Language bites</a>
               </Link>
+              {location === "bites" && (
+                <BiteList activeBiteUrlName={activeLessonUrlName} />
+              )}
             </li>
             <li>
               <Link href="/forums">
@@ -53,8 +59,11 @@ const NavigationSidebar = (props: Props) => {
 
       <IfDesktop>
         {!isLessonOpen && <div>What to add here?</div>}
-        {isLessonOpen && (
+        {["lessons", "courses"].includes(location) && (
           <CourseList activeLessonUrlName={activeLessonUrlName} />
+        )}
+        {location === "bites" && (
+          <BiteList activeBiteUrlName={activeLessonUrlName} />
         )}
       </IfDesktop>
     </>

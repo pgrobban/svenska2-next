@@ -1,6 +1,6 @@
 import { cloneDeep, sampleSize } from 'lodash';
 import { find } from 'lodash';
-import { Lesson, Course, CorrectIncorrectMark } from '../models/types';
+import { Lesson, Course, CorrectIncorrectMark, Bite } from '../models/types';
 
 export const SITE_NAME = 'Robban\'s Swedish Corner';
 
@@ -35,6 +35,11 @@ export const getLessonByUrlName = (courses: Course[], urlName: string): (Lesson 
 export const getCourseByUrlName = (courses: Course[], urlName: string): (Course | undefined) => {
   const foundCourse = find(courses, { urlName }) as Course;
   return foundCourse;
+}
+
+export const getBiteByUrlName = (bites: Bite[], urlName: string): (Bite | undefined) => {
+  const foundBite = find(bites, { urlName });
+  return foundBite;
 }
 
 export const getBorderColorByMark = (correctIncorrectMark: CorrectIncorrectMark | null) => {
@@ -95,3 +100,4 @@ export const getSwedishOrdinalDayToday = () => {
 
 export const LESSONS_PATH = '/lesson';
 export const COURSES_PATH = '/course';
+export const BITES_PATH = '/bites';

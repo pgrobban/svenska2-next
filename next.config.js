@@ -35,6 +35,10 @@ module.exports = {
       {
         source: "/lessons",
         destination: "/lesson/before-you-start"
+      },
+      {
+        source: "/bites",
+        destination: "/bite/about-bites"
       }
     ];
   }

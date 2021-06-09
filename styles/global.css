@@ -1290,7 +1290,16 @@ a {
   z-index: 1000;
 }
 
-#mySidebar > div > ul > li > ul > li:hover, /* todo fix better selector */
+.bite-list {
+  list-style-type: none;
+}
+
+.bite-list li {
+  padding-left: 15px;
+}
+
+#navigation-sidebar > div > ul > li > ul > li:hover, /* todo fix better selector */
+.bite-list ul li:hover,
 .theme-swe-hover li ol li:hover, 
 .theme-swe-hover span:hover, 
 .theme-swe-hover button:hover, 

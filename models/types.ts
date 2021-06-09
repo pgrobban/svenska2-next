@@ -13,8 +13,6 @@ export interface Lesson {
   description: string;
   chunks: ReactElement[];
   exercises: ReactElement<CommonExerciseProps>[];
-  number?: number;
-  hideBottomNavigation?: boolean;
 }
 
 export interface ExerciseProps {
@@ -51,3 +49,5 @@ export interface ShowBasedOnScreenProps {
   inline?: boolean;
   children: ReactNode;
 }
+
+export type Bite = Omit<Lesson, 'description'>;

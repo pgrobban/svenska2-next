@@ -1,4 +1,4 @@
-import { getLessonByUrlName } from "../../helpers/utils";
+import { getBiteByUrlName } from "../../helpers/utils";
 import { IfDesktop } from "../../helpers/showBasedOnScreen";
 import { useRouter } from "next/router";
 import Layout from "../../components/layout/Layout";
@@ -8,7 +8,7 @@ import Icon from "../../components/Icon";
 import LessonContentView from "../../components/LessonContentView";
 import ExerciseView from "../../components/ExerciseView";
 import { isEmpty } from "lodash";
-import courses from "../../models/courses";
+import bites from "../../models/bites";
 
 const SECTIONS = {
   LESSON: 0,
@@ -31,35 +31,35 @@ const getInitialViewingSection = (locationHash) => {
 
 const LessonView: React.FC = () => {
   const router = useRouter();
-  const { lessonUrlName } = router.query;
+  const { biteUrlName } = router.query;
   const [viewingSection, setViewingSection] = useState(SECTIONS.LESSON);
   useEffect(
     () => setViewingSection(getInitialViewingSection(location.hash)),
     []
   );
-  const showBottomNavigation = lessonUrlName !== 'before-you-start';
+  const showBottomNavigation = biteUrlName !== 'before-you-start';
 
-  if (typeof lessonUrlName !== "string") {
+  if (typeof biteUrlName !== "string") {
     return null;
   }
 
-  const lesson = getLessonByUrlName(courses, lessonUrlName);
-  if (!lesson) {
+  const bite = getBiteByUrlName(bites, biteUrlName);
+  if (!bite) {
     return (
-      <Layout location="lessons" title="Oh no!">
+      <Layout location="bites" title="Oh no!">
         <span>
-          This lesson link is invalid. If you followed a link to get here,
+          This bite link is invalid. If you followed a link to get here,
           please file a bug report in the forums.
         </span>
       </Layout>
     );
   }
 
-  if (isEmpty(lesson.chunks)) {
+  if (isEmpty(bite.chunks)) {
     return (
-      <Layout location="lessons" title="Oh no!">
+      <Layout location="bites" title="Oh no!">
         <span>
-          This lesson hasn't been written yet :(
+          This bite hasn't been written yet :(
         </span>
       </Layout>
     );
@@ -67,15 +67,15 @@ const LessonView: React.FC = () => {
 
   return (
     <Layout
-      location="lessons"
-      activeLessonUrlName={lessonUrlName}
-      title={lesson.name}
+      location="bites"
+      activeLessonUrlName={biteUrlName}
+      title={bite.name}
     >
       {viewingSection === SECTIONS.LESSON && (
-        <LessonContentView lessonChunks={lesson.chunks} />
+        <LessonContentView lessonChunks={bite.chunks} />
       )}
       {viewingSection === SECTIONS.EXERCISES && (
-        <ExerciseView lessonName={lesson.name} exercises={lesson.exercises} />
+        <ExerciseView lessonName={bite.name} exercises={bite.exercises} />
       )}
 
       {showBottomNavigation && (
@@ -94,7 +94,7 @@ const LessonView: React.FC = () => {
           <BottomNavigationAction
             label={<a href="#exercises">Exercises</a>}
             icon={<Icon type="exercise" />}
-            disabled={isEmpty(lesson.exercises)}
+            disabled={isEmpty(bite.exercises)}
           />
           <BottomNavigationAction
             label={<a href="#feedback">Feedback</a>}

@@ -1,8 +1,8 @@
 import classnames from "classnames";
-import { Lesson } from "../../models/types";
-import LessonLink from "../LessonLink";
+import { Lesson } from "../models/types";
+import LessonLink from "./LessonLink";
 import Link from "next/link";
-import { COURSES_PATH } from "../../helpers/utils";
+import { COURSES_PATH } from "../helpers/utils";
 
 interface Props {
   lessons: Lesson[];
@@ -40,7 +40,7 @@ const LessonList: React.FC<Props> = (props: Props) => {
       </ul>
 
       <ol className="w3-ol w3-animate-left">
-        {nonOverviewLessons.map((lesson: Lesson, index) => (
+        {nonOverviewLessons.map((lesson, index) => (
           <li
             key={index}
             className={classnames([

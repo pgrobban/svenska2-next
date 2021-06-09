@@ -6,7 +6,7 @@ import { LESSONS_PATH } from "../helpers/utils";
 import courses from "../models/courses";
 import { getCourseNameByLessonUrlName } from "../helpers/utils";
 import Icon from "./Icon";
-import LessonList from "./layout/LessonList";
+import LessonList from "./LessonList";
 
 const BEFORE_YOU_START_URL_NAME = "before-you-start";
 
