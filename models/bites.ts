@@ -1,6 +1,7 @@
 import { Bite } from "./types";
 import AboutLanguageBitesChunks from './lessons/AboutBites';
 import UnderstandingJuChunks from './lessons/bites/UnderstandingJu';
+import UnderstandingNämligenChunks from './lessons/bites/UnderstandingNämligen';
 
 const bites: Bite[] = [
   {
@@ -24,7 +25,7 @@ const bites: Bite[] = [
   {
     name: 'Understanding "nämligen"',
     urlName: 'understanding-nämligen',
-    chunks: [],
+    chunks: UnderstandingNämligenChunks,
     exercises: []
   },
   {
