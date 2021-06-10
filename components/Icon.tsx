@@ -13,7 +13,8 @@ import {
   ExpandMore as ExpandMoreIcon,
   ExpandLess as ExpandLessIcon,
   Close as CloseIcon,
-  InfoOutlined as InfoIcon
+  InfoOutlined as InfoIcon,
+  Warning as WarningIcon
 } from '@material-ui/icons';
 // import FactCheckIcon from '@material-ui/icons/FactCheck';
 
@@ -30,6 +31,7 @@ const icons = {
   sound: <SoundIcon />,
   help: <HelpIcon />,
   info: <InfoIcon />,
+  warning: <WarningIcon />,
   // svg icons
   facebook: <img src="/images/facebook.svg" />,
   instagram: <img src="/images/instagram.svg" />,

@@ -1,3 +1,6 @@
+import React from "react";
+import WarningBlock from "../../../components/WarningBlock";
+
 export default [
   <div className="lesson-chunk">
     <div className="blackboard lesson-blackboard">
@@ -80,11 +83,24 @@ export default [
         studying more will produce the consequence of better results on a test,
         more knowledge etc.
       </li>
-      <li>
-        Some people have started saying ju...ju or desto...desto in oral speech.
-        This is incorrect.
-      </li>
     </ul>
+
+    <WarningBlock>
+      <p>
+        Some people have started saying ju...ju or even desto...desto in oral
+        speech. This is incorrect.
+      </p>
+
+      <p>
+        I suspect that this comes from the translated version of the children's
+        song lyrics "The more we are together, the happier we'll be", which in
+        Swedish is sung as <i>Ju mer vi är tillsammans, ju gladare vi bli</i>.
+        The second <i>ju</i> here should be a <i>desto</i>, but because <i>desto</i> has two
+        syllables, it doesn't fit the melody quite right. Furthermore, the {" "}
+        <i>vi bli</i> part is outdated grammar so in modern Swedish it should be{" "}
+        <i>blir vi</i>.
+      </p>
+    </WarningBlock>
   </div>,
   <div className="lesson-chunk">
     <h3 className="theme-swe-blue">Usage 2: Main clause + ju</h3>
