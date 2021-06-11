@@ -132,10 +132,10 @@ export default [
   <div className="lesson-chunk">
     <p>
       The word "because" in English is a bit restrictive as it usually only
-      relates to an action in need of an explanation, whereas in Swedish it can
-      be more flexible. In the example below it is used to provide an
-      explanation for why someone is asking something and not the action (of not
-      being at home):
+      relates to an action in need of an explanation.
+      <br />
+      In Swedish, <i>nämligen</i> can also relate to the action of asking a
+      question, as seen below:
     </p>
 
     <p>Ex 6:</p>
@@ -144,6 +144,12 @@ export default [
       <br />
       Weren't you at home yesterday? (The reason I ask is because) I tried to
       call you.
+    </p>
+
+    <p>
+      In this case, you can't use the linking words, and if you translate the
+      sentence using "because" in English, you have to indicate that it refers
+      to the question being asked.
     </p>
   </div>
 ];
