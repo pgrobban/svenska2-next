@@ -24,7 +24,7 @@ export default [
 
     <p>Ex 1:</p>
     <p className="w3-margin-left">
-      Jag kommer från en liten stad i södra Sverige, <strong>nämligen</strong>{" "}
+      Jag kommer från en stad i södra Sverige, <strong>nämligen</strong>{" "}
       Halmstad.
       <br />I come from a town in southern Sweden, Halmstad,{" "}
       <u>to be precise</u>.
@@ -44,20 +44,10 @@ export default [
 
     <p>
       If <i>nämligen</i> appears as an adverb, it indicates that what follows
-      expresses a reason for the previous sentence. You can think of it like
-      "because".
+      expresses a reason for the previous sentence.
     </p>
 
-    <p>Ex 1:</p>
-    <p className="w3-margin-left">
-      Jag kom för sent till skolan, för min buss kom <strong>nämligen</strong>{" "}
-      för sent.
-      <br />I arrived too late to school, <u>because</u> my bus was late..
-    </p>
-
-    <p>The explanation clause doesn't have to be in the same sentence:</p>
-
-    <p>Ex 2a:</p>
+    <p>Ex 1a:</p>
     <p className="w3-margin-left">
       Han kan inte äta det där. Han är <strong>nämligen</strong> allergisk mot
       jordnötter.
@@ -68,44 +58,87 @@ export default [
     </p>
 
     <p>
-      If you want to write this as a single sentence, you have to provide a
-      linking phrase such as <i>för</i>, <i>för att</i>, <i>därför att</i>.
-      Since these words already mean "because", the <i>nämligen</i> becomes
-      optional in such sentence structures:
+      You can rewrite this as a single sentence with linking words such as{" "}
+      <i>för</i>, <i>för att</i> or <i>därför att</i> meaning "because".
+      However, in that kind of sentence structure, <i>nämligen</i> becomes
+      optional.
     </p>
 
-    <p>Ex 2b:</p>
+    <p>Ex 1b:</p>
     <p className="w3-margin-left">
-      Han kan inte äta det där, för han är (<strong>nämligen</strong>) allergisk
-      mot jordnötter.
+      Han kan inte äta det där, <u>för</u> han är (<strong>nämligen</strong>)
+      allergisk.
     </p>
   </div>,
   <div className="lesson-chunk">
+    <p>Ex 2:</p>
+    <p className="w3-margin-left">
+      Jag kom för sent till skolan. Min buss kom <strong>nämligen</strong> för
+      sent.
+      <br />= Jag kom för sent till skolan, <u>för</u> min buss kom (
+      <strong>nämligen</strong>) för sent.
+      <br />I got late for school, <u>because</u> my bus arrived too late.
+    </p>
+
     <p>Ex 3:</p>
     <p className="w3-margin-left">
-      Du behöver inte berätta om festen. Jag var nämligen där.
+      Du behöver inte berätta om festen. Jag var <strong>nämligen</strong> där.
+      <br />
+      (= Du behöver inte berätta om festen, därför att jag var (
+      <strong>nämligen</strong>) där.)
       <br />
       You don't have to talk about the party. I was there, <u>after all</u>.
     </p>
-
-    <p>Ex 4:</p>
+  </div>,
+  <div className="lesson-chunk">
+    <p>Ex 4 (Article from tech magazine):</p>
     <p className="w3-margin-left">
       Det kommer snart att bli lättare att uppgradera till en ny MyPhone. Med
-      MyOS 15 kan du nämligen aktivera obegränsad gratis MyCloud-lagring för
-      flytten.
+      MyOS 15 kan du <strong>nämligen</strong> aktivera obegränsad gratis
+      MyCloud-lagring för flytten.
       <br />
       It will soon be easier to upgrade to a new MyPhone, <u>as</u> MyOS 15 lets
       you activate unlimited MyCloud storage for the migration.
     </p>
+
+    <p>
+      In this example, the <i>nämligen</i> serves to reinforce the statement
+      that upgrading to a new MyPhone will be easier. I chose to translate{" "}
+      <i>nämligen</i> as "as" in the sentence. However, you could also use
+      "because" here. But consider the next example:
+    </p>
+
+    <p>Ex 5 (Article from sports news in 2021):</p>
+    <p className="w3-margin-left">
+      Rafael Nadal kommer till semifinalen efter sin tuffaste match i Paris på
+      två år. För första gången sedan finalsegern mot Dominic Thiem 2019
+      förlorade spanjoren <strong>nämligen</strong> ett set i turneringen.
+      <br />
+      Rafael Nadal reaches the semi final after his toughest match in Paris in
+      two years, <u>as</u> for the first time since his victory in the final
+      game against Dominic Thiem in 2019, the Spaniard lost a set in the
+      tournament.
+    </p>
+
+    <p>
+      In this sentence it makes no sense to use "because" in English as that
+      would imply that reaching the semi final for this year was his victory two
+      years ago.
+      <br />
+      Instead, the <i>nämligen</i> here serves to explain why the author thinks
+      this match will be the toughest one for Nadal in two years.
+    </p>
   </div>,
   <div className="lesson-chunk">
     <p>
-      However, "because" in English always provides an explanation of something
-      that has happened, whereas in Swedish it can be more flexible. Here it is
-      used to provide an explanation for why someone is asking something:
+      The word "because" in English is a bit restrictive as it usually only
+      relates to an action in need of an explanation, whereas in Swedish it can
+      be more flexible. In the example below it is used to provide an
+      explanation for why someone is asking something and not the action (of not
+      being at home):
     </p>
 
-    <p>Ex 5:</p>
+    <p>Ex 6:</p>
     <p className="w3-margin-left">
       Var du inte hemma igår? Jag försökte <strong>nämligen</strong> ringa dig.
       <br />

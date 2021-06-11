@@ -47,6 +47,12 @@ const bites: Bite[] = [
     exercises: []
   },
   {
+    name: '"Från" or "ifrån"?',
+    urlName: 'från-or-ifrån',
+    chunks: [],
+    exercises: []
+  },
+  {
     name: 'Expressing future tense',
     urlName: 'expressing-future-tense',
     chunks: [],
