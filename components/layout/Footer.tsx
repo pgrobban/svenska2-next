@@ -8,7 +8,7 @@ interface Props {}
 const Footer: React.FC<Props> = () => {
   const copyright = (
     <span>
-      &copy; {new Date().getFullYear()} Robban's Swedish Language Corner
+      &copy; {new Date().getFullYear()} Robban&apos;s Swedish Language Corner
     </span>
   );
   const socialLinks = (

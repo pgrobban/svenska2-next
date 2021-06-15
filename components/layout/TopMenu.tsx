@@ -32,7 +32,7 @@ const TopMenu: React.FC<Props> = (props) => {
 
       <Link href="/">
         <a id="logo" className="w3-bar-item w3-button">
-          Robban's Swedish Corner
+          Robban&apos;s Swedish Corner
         </a>
       </Link>
       <IfDesktop>

@@ -17,9 +17,9 @@ export default [
     <h3 className="theme-swe-blue">Usage 1: "more precisely"</h3>
 
     <p>
-      When <i>nämligen</i> appears at the start of a clause on its own, it has
-      the meaning of "more precisely" or "more particularly". It serves to
-      provide a more detailed explanation of the preceding clause.
+      When <i>nämligen</i> appears at the start of a clause after a comma, it
+      usually has the meaning of "more precisely" or "more particularly". It
+      serves to provide a more detailed explanation of the preceding clause.
     </p>
 
     <p>Ex 1:</p>

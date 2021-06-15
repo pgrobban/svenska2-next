@@ -15,7 +15,7 @@ const Home: React.FC<Props> = () => {
           <br />
           Made easy.
         </h2>
-        <h3>Welcome to Robban's Swedish Language Corner</h3>
+        <h3>Welcome to Robban&apos;s Swedish Language Corner</h3>
       </div>
       <h2 className="theme-swe-blue" style={{ marginTop: 20 }}>
         Hej!
@@ -28,7 +28,7 @@ const Home: React.FC<Props> = () => {
         <br />
         If your answer to any of the questions above is "yes", then why not try
         a new way of learning? Say goodbye to boring books and unmotivated
-        classmates. At Robban's Swedish corner, we offer:
+        classmates. At Robban&apos;s Swedish corner, we offer:
       </p>
 
       <div

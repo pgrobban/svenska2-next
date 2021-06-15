@@ -32,8 +32,8 @@ const ReadTongueTwisters: React.FunctionComponent<ReadTongueTwistersProps> = (
         using the button at the bottom.
       </p>
 
-      {tongueTwisters.map((tongueTwister) => (
-        <div>
+      {tongueTwisters.map((tongueTwister, index) => (
+        <div key={index}>
           <h6>{tongueTwister.header}</h6>
           <p>{tongueTwister.label}</p>
           <p>
