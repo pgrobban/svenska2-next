@@ -115,7 +115,7 @@ const lessonChunks = [
     
     <p className="w3-margin-left">
       Vi går på konsert med våra män.<br />
-      We're going on a concert with our husbands.
+      = We're going on a concert with our husbands.
     </p>
 
     <h4 className="theme-swe-blue">adults as a measure of strength</h4>
@@ -128,7 +128,7 @@ const lessonChunks = [
 
     <p className="w3-margin-left">
       Med tre <strong>man</strong> kan vi lyfta bordet.<br />
-      We can lift the table with three people.
+      = We can lift the table with three people.
     </p>
   </div>,
   <div className="lesson-chunk">
