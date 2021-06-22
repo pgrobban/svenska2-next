@@ -2,6 +2,7 @@ import { Bite } from "./types";
 import AboutLanguageBitesChunks from './lessons/AboutBites';
 import UnderstandingJuChunks from './lessons/bites/UnderstandingJu';
 import UnderstandingNämligenChunks from './lessons/bites/UnderstandingNämligen';
+import UnderstandingManChunks from './lessons/bites/UnderstandingMan';
 
 const bites: Bite[] = [
   {
@@ -31,7 +32,7 @@ const bites: Bite[] = [
   {
     name: 'Understanding "man"',
     urlName: 'understanding-man',
-    chunks: [],
+    chunks: UnderstandingManChunks,
     exercises: []
   },
   {
