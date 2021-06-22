@@ -59,7 +59,7 @@ const LessonView: React.FC = () => {
     return (
       <Layout location="bites" title="Oh no!">
         <span>
-          This bite hasn't been written yet :(
+          This bite hasn&apos;t been written yet :(
         </span>
       </Layout>
     );
