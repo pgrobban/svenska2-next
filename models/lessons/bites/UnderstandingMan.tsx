@@ -1,6 +1,6 @@
 import React from "react";
 
-export default [
+const lessonChunks = [
   <div className="lesson-chunk">
     <div className="blackboard lesson-blackboard">
       <h3>Language Bites</h3>
@@ -104,12 +104,19 @@ export default [
 
     <p>
       The noun <i>man</i> can be used as in English to mean "man". There are
-      some additional meanings, however:
+      some additional meanings, however, as we shall see in the examples
+      below:
     </p>
 
     <h4 className="theme-swe-blue">husband</h4>
 
-    <p className="w3-margin-left">Vi går på konsert med våra män.</p>
+    <p>In some cases like in English, <strong>man</strong> can mean
+    husband:</p>
+    
+    <p className="w3-margin-left">
+      Vi går på konsert med våra män.<br />
+      We're going on a concert with our husbands.
+    </p>
 
     <h4 className="theme-swe-blue">adults as a measure of strength</h4>
 
@@ -131,15 +138,16 @@ export default [
 
     <p className="w3-margin-left">
       Karl XII hade en armé på 100 000 <strong>man</strong> mot Ryssland.<br />
-      = Karl XII had an army of 100 000 (people/men).
+      = Charles XII had an army of 100 000 (people/men) against Russia.
     </p>
     
     <h4 className="theme-swe-blue">mane</h4>
 
     <p>
       The word <i>man</i> can also mean mane, i.e. the hair of a horse or lion.
+      This word is pronounced with the long a, and it's conjugated differently:
       The definite form is <i>manen</i> , plural <i>manar</i> and definite plural
-      <i>manarna</i>.
+      {" "}<i>manarna</i>.
     </p>
 
     <p className="w3-margin-left">
@@ -148,3 +156,5 @@ export default [
     </p>
   </div>
 ];
+
+export default lessonChunks;
