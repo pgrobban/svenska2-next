@@ -80,9 +80,8 @@ const lessonChunks = [
 
     <p className="w3-margin-left">
       I Sverige pratar <strong>man</strong> svenska.
-      <br />
-      = <strong>They</strong> speak Swedish in Sweden./People in Sweden speak
-      Swedish.
+      <br />= <strong>They</strong> speak Swedish in Sweden./People in Sweden
+      speak Swedish.
     </p>
 
     <p>
@@ -93,8 +92,8 @@ const lessonChunks = [
     <p className="w3-margin-left">
       Som <strong>man</strong> kan se i grafen har antalet trafikolyckor minskat
       sedan 2000-talet.
-      <br />= As <strong>you/one</strong> can see in the graph, the number of traffic
-      accidents has decreased since the 2000s.
+      <br />= As <strong>you/one</strong> can see in the graph, the number of
+      traffic accidents has decreased since the 2000s.
     </p>
   </div>,
   <div className="lesson-chunk">
@@ -104,31 +103,32 @@ const lessonChunks = [
 
     <p>
       The noun <i>man</i> can be used as in English to mean "man". There are
-      some additional meanings, however, as we shall see in the examples
-      below:
+      some additional meanings, however, as we shall see in the examples below:
     </p>
 
     <h4 className="theme-swe-blue">husband</h4>
 
-    <p>In some cases like in English, <strong>man</strong> can mean
-    husband:</p>
-    
+    <p>
+      In some cases like in English, <strong>man</strong> can mean husband:
+    </p>
+
     <p className="w3-margin-left">
-      Vi går på konsert med våra män.<br />
-      = We're going on a concert with our husbands.
+      Vi går på konsert med våra män.
+      <br />= We're going on a concert with our husbands.
     </p>
 
     <h4 className="theme-swe-blue">adults as a measure of strength</h4>
 
     <p>
       This meaning typically gets translated to "people" and doesn't necessarily
-      refer to only adult men.<br />
+      refer to only adult men.
+      <br />
       Notice that the plural <i>män</i> not used here:
     </p>
 
     <p className="w3-margin-left">
-      Med tre <strong>man</strong> kan vi lyfta bordet.<br />
-      = We can lift the table with three people.
+      Med tre <strong>man</strong> kan vi lyfta bordet.
+      <br />= We can lift the table with three people.
     </p>
   </div>,
   <div className="lesson-chunk">
@@ -137,22 +137,23 @@ const lessonChunks = [
     <p>Like in the previous usage, we don't use the plural form here.</p>
 
     <p className="w3-margin-left">
-      Karl XII hade en armé på 100 000 <strong>man</strong> mot Ryssland.<br />
-      = Charles XII had an army of 100 000 (people/men) against Russia.
+      Karl XII hade en armé på 100 000 <strong>man</strong> mot Ryssland.
+      <br />= Charles XII had an army of 100 000 (people/men) against Russia.
     </p>
-    
+
     <h4 className="theme-swe-blue">mane</h4>
 
     <p>
       The word <i>man</i> can also mean mane, i.e. the hair of a horse or lion.
       This word is pronounced with the long a, and it's conjugated differently:
-      The definite form is <i>manen</i> , plural <i>manar</i> and definite plural
-      {" "}<i>manarna</i>.
+      The definite form is <i>manen</i> , plural <i>manar</i> and definite
+      plural <i>manarna</i>.
     </p>
 
     <p className="w3-margin-left">
-      <strong>Manen</strong> från en häst kan till exempel användas till stråkar på fioler.<br />
-      = Horse mane can be used to make violin strings, for instance.
+      <strong>Manen</strong> från en häst kan till exempel användas till stråkar
+      på fioler.
+      <br />= Horse mane can be used to make violin strings, for instance.
     </p>
   </div>
 ];

@@ -3,6 +3,7 @@ import AboutLanguageBitesChunks from './lessons/AboutBites';
 import UnderstandingJuChunks from './lessons/bites/UnderstandingJu';
 import UnderstandingNämligenChunks from './lessons/bites/UnderstandingNämligen';
 import UnderstandingManChunks from './lessons/bites/UnderstandingMan';
+import UnderstandingVälChunks from './lessons/bites/UnderstandingVäl';
 
 const bites: Bite[] = [
   {
@@ -20,7 +21,7 @@ const bites: Bite[] = [
   {
     name: 'Understanding "väl"',
     urlName: 'understanding-väl',
-    chunks: [],
+    chunks: UnderstandingVälChunks,
     exercises: []
   },
   {
