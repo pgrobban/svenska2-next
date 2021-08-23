@@ -42,7 +42,7 @@ const lessonChunks = [
         </em>
       </u>
     </p>
-    <Image className="w3-image" src={"/images/aomeme.jpg"} alt="åäö meme" />
+    <Image className="w3-image" src={"/images/åäömeme.jpg"} alt="åäö meme" height="433" width="577" />
 
     <p>
       This means they are pronounced differently from A and O. We will see more

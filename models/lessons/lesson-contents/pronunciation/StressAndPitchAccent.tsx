@@ -108,6 +108,8 @@ const lessonChunks = [
       src={'/images/accents.png'}
       alt="Pitch accent"
       title="Pitch accent"
+      height="375"
+      width="750"
     />
 
     <p>
@@ -141,6 +143,8 @@ const lessonChunks = [
       src={'/images/pitch.png'}
       alt="Pitch in the word Drottninggatan"
       title="Pitch in the word Drottninggatan"
+      height="375"
+      width="750"
     />
   </div>,
   <div className="lesson-chunk">
@@ -159,6 +163,8 @@ const lessonChunks = [
       src={'/images/pitch2.png'}
       alt={`Pitch in the word sentence "Jag bor i Stockholm."`}
       title={`Pitch in the word sentence "Jag bor i Stockholm."`}
+      height="375"
+      width="750"
     />
 
     <p>
@@ -176,6 +182,8 @@ const lessonChunks = [
       src={'/images/pitch3.png'}
       alt={`Pitch in the word sentence "Bor han i Stockholm?"`}
       title={`Pitch in the word sentence "Bor han i Stockholm?"`}
+      height="375"
+      width="750"
     />
   </div>,
   <div className="lesson-chunk">

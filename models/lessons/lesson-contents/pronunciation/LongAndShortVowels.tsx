@@ -121,7 +121,7 @@ const lessonChunks = [
       </li>
     </ul>
     <p>
-      <Image className="w3-image" src={"ö.jpg"} alt="ö meme" />
+      <Image className="w3-image" src={"/images/ö.jpg"} alt="ö meme" height="534" width="424" />
     </p>
   </div>,
   <div className="lesson-chunk">
