@@ -5,6 +5,7 @@ import { ExerciseProps } from "../../models/types";
 import InstallingSwedishKeyboardInstructionsDialog, {
   OperatingSystem
 } from "../InstallingSwedishKeyboardInstructionsDialog";
+import Image from 'next/image';
 
 const REQUIRED_TIMES_FOR_COMPLETION = 3;
 
@@ -86,7 +87,7 @@ const TypingTheAlphabet: React.FunctionComponent<TypingTheAlphabetProps> = (
         where Å, Ä and Ö are located.
       </p>
 
-      <img className="w3-image" src={'/images/swedish_keyboard.svg'} alt="Swedish keyboard" />
+      <Image className="w3-image" src={'/images/swedish_keyboard.svg'} alt="Swedish keyboard" />
 
       <p>Now you can begin typing in the text box below.</p>
 

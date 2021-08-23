@@ -17,6 +17,7 @@ import {
   getBorderColorByMark,
   normalizeInputs
 } from "../../helpers/utils";
+import Image from 'next/image';
 
 export interface WhoAreTheyProps extends ExerciseProps {}
 
@@ -131,7 +132,7 @@ const WhoAreThey: React.FunctionComponent<WhoAreTheyProps> = (
           {SvenssonFamilyMembers.map((member, index) => (
             <TableRow key={member}>
               <TableCell>
-                <img
+                <Image
                   className="table-image"
                   src={`/images/${member}.jpg`}
                   alt=""

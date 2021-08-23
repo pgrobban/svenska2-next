@@ -9,6 +9,7 @@ import UserController from "../UserController";
 import Footer from "./Footer";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { SITE_NAME } from "../../helpers/utils";
+import Image from 'next/image';
 
 export const siteTitle = "Robban's Swedish corner";
 
@@ -57,10 +58,6 @@ const Layout: React.FC<LayoutProps> = ({
         />
 
         <meta name="og:title" content={siteTitle} />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Mukta"
-        />
       </Head>
       <ThemeProvider theme={theme}>
         <TopMenu
@@ -101,7 +98,7 @@ const Layout: React.FC<LayoutProps> = ({
               {(location === "404" || title === "Oh no!") && (
                 <>
                   <h3>Oh no!</h3>
-                  <img
+                  <Image
                     className="table-image centered"
                     alt="Sad panda"
                     title="Sad panda :("

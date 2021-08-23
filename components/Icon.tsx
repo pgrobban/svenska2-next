@@ -16,6 +16,7 @@ import {
   InfoOutlined as InfoIcon,
   Warning as WarningIcon
 } from '@material-ui/icons';
+import Image from 'next/image';
 // import FactCheckIcon from '@material-ui/icons/FactCheck';
 
 const icons = {
@@ -33,8 +34,8 @@ const icons = {
   info: <InfoIcon />,
   warning: <WarningIcon />,
   // svg icons
-  facebook: <img src="/images/facebook.svg" />,
-  instagram: <img src="/images/instagram.svg" />,
+  facebook: <Image alt="" width={24} height={24} src="/images/facebook.svg" />,
+  instagram: <Image alt="" width={24} height={24} src="/images/instagram.svg" />,
   arrowRight: <ArrowRightIcon />,
   arrowLeft: <ArrowLeftIcon />
 };
