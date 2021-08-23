@@ -2,6 +2,7 @@ import { Table, TableBody, TableCell, TableRow } from "@material-ui/core";
 import React from "react";
 import AudioButton from "../../../../components/AudioButton";
 import { IfMobile, IfDesktop } from "../../../../helpers/showBasedOnScreen";
+import Image from 'next/image';
 
 const lessonChunks = [
   <div className="lesson-chunk">
@@ -120,7 +121,7 @@ const lessonChunks = [
       </li>
     </ul>
     <p>
-      <img className="w3-image" src={"ö.jpg"} alt="ö meme" />
+      <Image className="w3-image" src={"ö.jpg"} alt="ö meme" />
     </p>
   </div>,
   <div className="lesson-chunk">

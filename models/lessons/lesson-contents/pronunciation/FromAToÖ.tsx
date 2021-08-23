@@ -2,6 +2,7 @@ import React from "react";
 import AudioButton from "../../../../components/AudioButton";
 import { IfMobile, IfDesktop } from "../../../../helpers/showBasedOnScreen";
 import { LETTERS_OF_ALPHABET, VOWELS } from "../../../../helpers/utils";
+import Image from 'next/image';
 
 const lessonChunks = [
   <div className="lesson-chunk">
@@ -41,7 +42,7 @@ const lessonChunks = [
         </em>
       </u>
     </p>
-    <img className="w3-image" src={"/images/aomeme.jpg"} alt="åäö meme" />
+    <Image className="w3-image" src={"/images/aomeme.jpg"} alt="åäö meme" />
 
     <p>
       This means they are pronounced differently from A and O. We will see more

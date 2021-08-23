@@ -4,6 +4,7 @@ import { Button } from "@material-ui/core";
 import AudioButton from "../../components/AudioButton";
 import { IfDesktop, IfMobile } from "../../helpers/showBasedOnScreen";
 import Link from "next/link";
+import Image from "next/image";
 
 export const chunks = [
   <div className="lesson-chunk">
@@ -220,11 +221,12 @@ export const chunks = [
     <h5>Useful apps</h5>
     <p>
       Some exercises are marked with the icon on the right.
-      <img
+      <Image
         src="/images/saol.png"
         alt="SAOL"
-        className="w3-right w3-margin-left"
-        style={{ width: 75 }}
+        className="w3-right w3-margin-left saol"
+        width={75}
+        height={75}
       />
       This is the logo for the Swedish Academy (Svenska Akademien). The Swedish
       Academy publishes a glossary regularly called SAOL (Svenska Akademiens
@@ -254,10 +256,12 @@ export const chunks = [
       bar:
     </p>
     <div className="centered">
-      <img
+      <Image
         className="w3-image"
         src={"/images/bottom-navigation.png"}
         alt="Bottom navigation"
+        width={500}
+        height={100}
       />
     </div>
     <p>

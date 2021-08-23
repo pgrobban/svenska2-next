@@ -2,6 +2,7 @@ import { Table, TableBody, TableCell, TableRow } from "@material-ui/core";
 import React from "react";
 import AudioButton from "../../../../components/AudioButton";
 import { IfMobile, IfDesktop } from "../../../../helpers/showBasedOnScreen";
+import Image from 'next/image';
 
 const lessonChunks = [
   <div className="lesson-chunk">
@@ -102,7 +103,7 @@ const lessonChunks = [
 
     <p>We can describe the pitch of these word pairs with graphs as follows:</p>
 
-    <img
+    <Image
       className="w3-image"
       src={'/images/accents.png'}
       alt="Pitch accent"
@@ -135,7 +136,7 @@ const lessonChunks = [
       falls back to where it started.
     </p>
 
-    <img
+    <Image
       className="w3-image blackboard"
       src={'/images/pitch.png'}
       alt="Pitch in the word Drottninggatan"
@@ -153,7 +154,7 @@ const lessonChunks = [
       Stockholm.)
     </p>
 
-    <img
+    <Image
       className="w3-image blackboard"
       src={'/images/pitch2.png'}
       alt={`Pitch in the word sentence "Jag bor i Stockholm."`}
@@ -170,7 +171,7 @@ const lessonChunks = [
       Stockholm?)
     </p>
 
-    <img
+    <Image
       className="w3-image blackboard"
       src={'/images/pitch3.png'}
       alt={`Pitch in the word sentence "Bor han i Stockholm?"`}

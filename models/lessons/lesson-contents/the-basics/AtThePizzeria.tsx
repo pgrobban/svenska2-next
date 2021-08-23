@@ -5,6 +5,7 @@ import {
   atThePizzeriaAdditionalWords
 } from "../../word-lists/AtThePizzeria";
 import WordList from "../../../../components/WordList";
+import Image from 'next/image';
 
 const lessonChunks = [
   <div className="lesson-chunk">
@@ -28,7 +29,7 @@ const lessonChunks = [
 
     <p>Håkan är på Robbans Pizzeria. Han tittar på menyn.</p>
 
-    <img className="w3-image" alt="pizza-menu" src="/images/pizza-menu.png" />
+    <Image className="w3-image" alt="pizza-menu" src="/images/pizza-menu.png" />
 
     <Table>
       <TableBody>
