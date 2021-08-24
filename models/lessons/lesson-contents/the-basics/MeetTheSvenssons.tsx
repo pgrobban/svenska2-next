@@ -3,7 +3,8 @@ import AudioButton from "../../../../components/AudioButton";
 import WordList from "../../../../components/WordList";
 import { IfMobile, IfDesktop } from "../../../../helpers/showBasedOnScreen";
 import meetTheSvenssonsWords from "../../word-lists/MeetTheSvenssons";
-
+import Image from 'next/image';
+  
 const lessonChunks = [
   <div className="lesson-chunk">
     <div className="blackboard lesson-blackboard">
@@ -28,7 +29,9 @@ const lessonChunks = [
       listen to the recording.
     </p>
 
-    <img
+    <Image
+      width={400}
+      height={300}
       className="w3-image w3-margin-bottom"
       src={'/images/svenssons.png'}
       alt="Familjen Svensson"

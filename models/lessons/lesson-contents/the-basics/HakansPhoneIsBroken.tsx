@@ -7,6 +7,7 @@ import {
 } from "../../word-lists/HakansPhoneIsBroken";
 import AudioButton from "../../../../components/AudioButton";
 import { IfDesktop, IfMobile } from "../../../../helpers/showBasedOnScreen";
+import Image from 'next/image';
 
 const lessonChunks = [
   <div className="lesson-chunk">
@@ -33,7 +34,9 @@ const lessonChunks = [
       <TableBody>
         <TableRow>
           <TableCell>
-            <img
+            <Image
+              width={200}
+              height={140}
               className="table-image"
               alt="broken phone"
               src="/images/broken-phone.jpg"
@@ -49,7 +52,13 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="big dog" src="/images/dog.jpg" />
+            <Image
+              className="table-image"
+              alt="big dog"
+              src="/images/dog.jpg"
+              width={200}
+              height={140}
+            />
             <p>
               Familjen Svensson har en stor hund.
               <br />
@@ -63,7 +72,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
+            <Image
+              width={200}
+              height={140}
               className="table-image"
               alt="play"
               src="/images/painting.jpg"
@@ -78,7 +89,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
+            <Image
+              width={200}
+              height={140}
               className="table-image"
               alt="play"
               src="/images/school-boring.jpg"
@@ -93,7 +106,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
+            <Image
+              width={200}
+              height={140}
               className="table-image"
               alt="play"
               src="/images/old-house.jpg"
