@@ -87,7 +87,7 @@ const TypingTheAlphabet: React.FunctionComponent<TypingTheAlphabetProps> = (
         where Å, Ä and Ö are located.
       </p>
 
-      <Image className="w3-image" src={'/images/swedish_keyboard.svg'} alt="Swedish keyboard" />
+      <Image className="w3-image" src={'/images/swedish_keyboard.svg'} alt="Swedish keyboard" height={170} width={400} />
 
       <p>Now you can begin typing in the text box below.</p>
 

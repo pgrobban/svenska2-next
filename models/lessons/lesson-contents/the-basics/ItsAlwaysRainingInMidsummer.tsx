@@ -6,6 +6,7 @@ import {
   itsAlwaysRainingInMidsummerAdditionalWords
 } from "../../word-lists/ItsAlwaysRainingInMidsummer";
 import AudioButton from "../../../../components/AudioButton";
+import Image from 'next/image';
 
 const lessonChunks = [
   <div className="lesson-chunk">
@@ -31,7 +32,7 @@ const lessonChunks = [
       <TableBody>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="play" src="/images/sunny.jpg" />
+            <Image height={200} width={200} alt="play" src="/images/sunny.jpg" />
             <p>
               Det är soligt.
               <br />= Vädret är fint.
@@ -44,8 +45,8 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              height={200} width={200}
               alt="play"
               src="/images/halvklart.jpg"
             />
@@ -61,8 +62,8 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              height={200} width={200}
               alt="play"
               src="/images/overcast.jpg"
             />
@@ -74,7 +75,7 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="play" src="/images/rain.jpg" />
+            <Image height={200} width={200} alt="play" src="/images/rain.jpg" />
             <p>
               Det regnar.
               <br />
@@ -87,8 +88,8 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              height={200} width={200}
               alt="play"
               src="/images/lightning.jpg"
             />
@@ -100,7 +101,7 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="play" src="/images/snow.jpg" />
+            <Image height={200} width={200} alt="play" src="/images/snow.jpg" />
             <p>Det snöar.</p>
           </TableCell>
           <TableCell>
@@ -109,7 +110,7 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="play" src="/images/hail.jpg" />
+            <Image height={200} width={200} alt="play" src="/images/hail.jpg" />
             <p>Det haglar.</p>
           </TableCell>
           <TableCell>
@@ -118,7 +119,7 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="fog" src="/images/fog.jpg" />
+            <Image height={200} width={200} alt="fog" src="/images/fog.jpg" />
             <p>Det är dimmigt.</p>
           </TableCell>
           <TableCell>
@@ -127,7 +128,7 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="fog" src="/images/fog.jpg" />
+            <Image height={200} width={200} alt="fog" src="/images/fog.jpg" />
             <p>Det blåser.<br />
             = Det är blåsigt.</p>
           </TableCell>
@@ -140,7 +141,7 @@ const lessonChunks = [
   </div>,
   <div className="lesson-chunk">
     <p>Look at the weather map below and read the text.</p>
-    <img className="w3-image" alt="weather" src="/images/weather.png" />
+    <Image height={200} width={300} alt="weather" src="/images/weather.png" />
 
     <p>
       Det är midsommar.
