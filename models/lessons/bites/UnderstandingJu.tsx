@@ -4,8 +4,8 @@ import WarningBlock from "../../../components/WarningBlock";
 export default [
   <div className="lesson-chunk">
     <div className="blackboard lesson-blackboard">
-      <h3>Language Bites</h3>
-      <h2>Understanding "ju"</h2>
+      <h2>Language Bites</h2>
+      <h3>Understanding "ju"</h3>
     </div>
 
     <p>

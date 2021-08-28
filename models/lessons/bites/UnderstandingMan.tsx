@@ -3,8 +3,8 @@ import React from "react";
 const lessonChunks = [
   <div className="lesson-chunk">
     <div className="blackboard lesson-blackboard">
-      <h3>Language Bites</h3>
-      <h2>Understanding "man"</h2>
+      <h2>Language Bites</h2>
+      <h3>Understanding "man"</h3>
     </div>
 
     <p>

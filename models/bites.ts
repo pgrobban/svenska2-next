@@ -4,12 +4,20 @@ import UnderstandingJuChunks from './lessons/bites/UnderstandingJu';
 import UnderstandingNämligenChunks from './lessons/bites/UnderstandingNämligen';
 import UnderstandingManChunks from './lessons/bites/UnderstandingMan';
 import UnderstandingVälChunks from './lessons/bites/UnderstandingVäl';
+import WhyMenarIsSometimesWrongChunks from './lessons/bites/TheTrueMeaningOfMena';
+import { sortBy } from "lodash";
 
 const bites: Bite[] = [
   {
     name: 'About Language Bites',
     urlName: 'about-bites',
     chunks: AboutLanguageBitesChunks,
+    exercises: []
+  },
+  {
+    name: 'The true meaning of "mena"',
+    urlName: 'menar',
+    chunks: WhyMenarIsSometimesWrongChunks,
     exercises: []
   },
   {
@@ -36,7 +44,7 @@ const bites: Bite[] = [
     chunks: UnderstandingManChunks,
     exercises: []
   },
-  {
+  /*{
     name: '"Prata" or "tala"?',
     urlName: 'prata-or-tala',
     chunks: [],
@@ -65,7 +73,7 @@ const bites: Bite[] = [
     urlName: 'expressing-action-in-progress',
     chunks: [],
     exercises: []
-  }
+  }*/
 ];
 
-export default bites;
+export default sortBy(bites, 'name');

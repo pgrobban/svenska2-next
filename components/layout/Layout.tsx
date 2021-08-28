@@ -103,6 +103,8 @@ const Layout: React.FC<LayoutProps> = ({
                     alt="Sad panda"
                     title="Sad panda :("
                     src="/images/sad-panda.svg"
+                    height={100}
+                    width={100}
                   />
                 </>
               )}
