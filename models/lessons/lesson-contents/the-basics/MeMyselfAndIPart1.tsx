@@ -12,6 +12,7 @@ import {
   meMyselfAndIPart1AdditionalWords
 } from "../../word-lists/MeMyselfAndIPart1";
 import AudioButton from "../../../../components/AudioButton";
+import Image from "next/image";
 
 const lessonChunks = [
   <div className="lesson-chunk">
@@ -37,8 +38,9 @@ const lessonChunks = [
       <TableBody>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              width={150}
+              height={200}
               alt="student"
               src="/images/student.jpg"
             />
@@ -55,8 +57,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              width={200}
+              height={160}
               alt="shave"
               src="/images/shave-2.jpg"
             />
@@ -73,8 +76,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              width={160}
+              height={200}
               alt="hairdresser"
               src="/images/hairdresser.jpg"
             />
@@ -92,7 +96,11 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="hug" src="/images/hug.jpg" />
+            <Image
+              width={160}
+              height={200}
+              src="/images/hug.jpg"
+            />
             <p>
               Håkan kramar Lena.
               <br />
@@ -121,7 +129,13 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="cake" src="/images/cake.jpg" />
+            <Image
+              width={200}
+              height={160}
+              className="table-image"
+              alt="cake"
+              src="/images/cake.jpg"
+            />
             <p>
               Lena bakar en tårta till Saga och Alfred. <br />
               &rarr; Lena bakar en tårta till <strong>dem</strong>.<br />
@@ -135,8 +149,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              width={200}
+              height={160}
               alt="present"
               src="/images/present.jpg"
             />
@@ -155,8 +170,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              width={200}
+              height={200}
               alt="meeting"
               src="/images/meeting-2.jpg"
             />

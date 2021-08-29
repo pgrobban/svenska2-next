@@ -12,6 +12,7 @@ import {
   meMyselfAndIPart2AdditionalWords
 } from "../../word-lists/MeMyselfAndIPart2";
 import AudioButton from "../../../../components/AudioButton";
+import Image from "next/image";
 
 const lessonChunks = [
   <div className="lesson-chunk">
@@ -33,8 +34,9 @@ const lessonChunks = [
       <TableBody>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              height={150}
+              width={200}
               alt="teacher"
               src="/images/teacher.jpg"
             />
@@ -48,8 +50,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              height={200}
+              width={150}
               alt="student"
               src="/images/student.jpg"
             />
@@ -63,8 +66,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              height={150}
+              width={200}
               alt="meeting"
               src="/images/meeting.jpg"
             />
@@ -81,7 +85,13 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="play" src="/images/tired.jpg" />
+            <Image
+              height={150}
+              width={200}
+              className="table-image"
+              alt="play"
+              src="/images/tired.jpg"
+            />
             <p>
               Johan känner <strong>sig</strong> trött.
             </p>
@@ -92,8 +102,9 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img
-              className="table-image"
+            <Image
+              height={150}
+              width={200}
               alt="wardrobe"
               src="/images/wardrobe.jpg"
             />
@@ -107,7 +118,12 @@ const lessonChunks = [
         </TableRow>
         <TableRow>
           <TableCell>
-            <img className="table-image" alt="suit" src="/images/suit.jpg" />
+            <Image
+              height={200}
+              width={150}
+              alt="suit"
+              src="/images/suit.jpg"
+            />
             <p>
               Håkan <strong>har på sig</strong> en kostym.
             </p>
